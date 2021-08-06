@@ -1,5 +1,7 @@
 const { withGoogleFonts } = require("nextjs-google-fonts");
-
+/**
+ * @type {import('next').NextConfig}
+ **/
 module.exports = withGoogleFonts({
     googleFonts: {
         fonts: [

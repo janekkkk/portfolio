@@ -1,3 +1,5 @@
+import React = require("react");
+
 export default function AboutMe() {
     return (
         <div className="bg-white">

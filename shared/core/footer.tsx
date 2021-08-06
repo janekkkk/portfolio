@@ -1,3 +1,5 @@
+import React = require("react")
+
 const navigation = [
     {
         name: 'Facebook',
