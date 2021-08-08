@@ -10,8 +10,7 @@ export default function AboutMe(): JSX.Element {
                         Janek Ozga.
                     </p>
                     <p className="max-w-xl mt-5 mx-auto text-xl text-gray-500">
-                        Start building for free, then add a site plan to go live. Account plans unlock additional
-                        features.
+                        Front-end developer, JavaScript enthusiast, tree hugger and avid runner.
                     </p>
                 </div>
             </div>
