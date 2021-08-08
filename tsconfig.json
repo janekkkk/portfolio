@@ -5,7 +5,8 @@
     "paths": {
       "@/shared/*": ["shared/*"],
       "@/pages/*": ["pages/*"],
-      "@/components/*": ["shared/components/*"]
+      "@/features/*": ["features/*"],
+      "@/core/*": ["features/core/*"]
     }
   }
 }

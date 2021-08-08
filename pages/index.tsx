@@ -1,8 +1,8 @@
 import Head from 'next/head'
 import React = require('react');
-import AboutMe from "@/components/about-me";
-import Example from "@/components/content";
-import Footer from "@/shared/core/footer";
+import Posts from "@/features/posts/posts.component";
+import AboutMe from "@/features/about-me/about.me.component";
+import Footer from "@/core/footer.component";
 
 export default () => (
     <div className="flex flex-col items-center justify-center min-h-screen py-2">
@@ -13,7 +13,7 @@ export default () => (
 
         <main className="flex flex-col items-center justify-center w-full flex-1 px-20 text-center">
             <AboutMe/>
-            <Example/>
+            <Posts/>
         </main>
 
         <Footer/>
