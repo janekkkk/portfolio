@@ -25,16 +25,14 @@ class Layout extends React.Component<{ children: unknown; title: string; descrip
         const { children, title, description } = this.props;
 
         return (
-            <div className="flex flex-col items-center justify-center min-h-screen py-2">
+            <div className="flex flex-col justify-center min-h-screen py-2">
                 <Head>
                     <title>{title}</title>
                     <meta name="description" content={description} />
                     <link rel="icon" href="/favicon.ico" />
                 </Head>
 
-                <main className="flex flex-col items-center justify-center w-full flex-1 px-20 text-center">
-                    {children}
-                </main>
+                <main className="flex flex-col w-full flex-1 px-20">{children}</main>
 
                 <Footer />
             </div>
