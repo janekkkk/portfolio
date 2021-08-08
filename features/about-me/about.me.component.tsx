@@ -1,4 +1,4 @@
-import React = require("react");
+import React from 'react';
 
 export default function AboutMe() {
     return (
@@ -10,10 +10,11 @@ export default function AboutMe() {
                         Janek Ozga.
                     </p>
                     <p className="max-w-xl mt-5 mx-auto text-xl text-gray-500">
-                        Start building for free, then add a site plan to go live. Account plans unlock additional features.
+                        Start building for free, then add a site plan to go live. Account plans unlock additional
+                        features.
                     </p>
                 </div>
             </div>
         </div>
-    )
+    );
 }

@@ -1,12 +1,13 @@
 {
-  "compilerOptions": {
-    "baseUrl": ".",
-    "jsx": "react",
-    "paths": {
-      "@/shared/*": ["shared/*"],
-      "@/pages/*": ["pages/*"],
-      "@/features/*": ["features/*"],
-      "@/core/*": ["features/core/*"]
+    "compilerOptions": {
+        "baseUrl": ".",
+        "jsx": "react",
+        "allowSyntheticDefaultImports": true,
+        "paths": {
+            "@/shared/*": ["shared/*"],
+            "@/pages/*": ["pages/*"],
+            "@/features/*": ["features/*"],
+            "@/core/*": ["features/core/*"]
+        }
     }
-  }
 }

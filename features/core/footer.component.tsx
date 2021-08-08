@@ -1,4 +1,4 @@
-import React = require("react")
+import React from 'react';
 
 const navigation = [
     {
@@ -62,7 +62,7 @@ const navigation = [
             </svg>
         ),
     },
-]
+];
 
 export default function Footer() {
     return (
@@ -81,5 +81,5 @@ export default function Footer() {
                 </div>
             </div>
         </footer>
-    )
+    );
 }
