@@ -1,13 +1,45 @@
 {
-    "compilerOptions": {
-        "baseUrl": ".",
-        "jsx": "react",
-        "allowSyntheticDefaultImports": true,
-        "paths": {
-            "@/shared/*": ["shared/*"],
-            "@/pages/*": ["pages/*"],
-            "@/features/*": ["features/*"],
-            "@/core/*": ["features/core/*"]
-        }
-    }
+  "compilerOptions": {
+    "baseUrl": ".",
+    "jsx": "preserve",
+    "allowSyntheticDefaultImports": true,
+    "paths": {
+      "@/shared/*": [
+        "shared/*"
+      ],
+      "@/pages/*": [
+        "pages/*"
+      ],
+      "@/features/*": [
+        "features/*"
+      ],
+      "@/core/*": [
+        "features/core/*"
+      ]
+    },
+    "target": "es5",
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "strict": false,
+    "forceConsistentCasingInFileNames": true,
+    "noEmit": true,
+    "esModuleInterop": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true
+  },
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
 }
