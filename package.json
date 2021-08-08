@@ -4,7 +4,8 @@
         "dev": "next dev",
         "build": "next build",
         "export": "next export",
-        "start": "next start"
+        "start": "next start",
+        "lint": "next lint --fix"
     },
     "dependencies": {
         "@headlessui/react": "^1.4.0",
@@ -16,10 +17,22 @@
     },
     "devDependencies": {
         "@types/react": "^17.0.16",
+        "@typescript-eslint/eslint-plugin": "^4.29.0",
+        "@typescript-eslint/parser": "^4.29.0",
         "autoprefixer": "^10.2.6",
+        "eslint": "^7.32.0",
+        "eslint-config-next": "^11.0.1",
+        "eslint-config-prettier": "^8.3.0",
+        "eslint-config-standard": "^16.0.3",
+        "eslint-plugin-jest": "^24.4.0",
+        "eslint-plugin-prettier": "^3.4.0",
+        "eslint-plugin-react": "^7.24.0",
+        "jest": "^27.0.6",
         "postcss": "^8.3.5",
         "prettier": "^2.3.2",
+        "standard": "^16.0.3",
         "tailwindcss": "^2.2.4",
+        "ts-standard": "^10.0.0",
         "typescript": "^4.3.5"
     }
 }

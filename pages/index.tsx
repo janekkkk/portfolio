@@ -4,7 +4,7 @@ import Posts from '@/features/posts/posts.component';
 import AboutMe from '@/features/about-me/about.me.component';
 import Footer from '@/core/footer.component';
 
-export default () => (
+const Index = (): JSX.Element => (
     <div className="flex flex-col items-center justify-center min-h-screen py-2">
         <Head>
             <title>Create Next App</title>
@@ -19,3 +19,5 @@ export default () => (
         <Footer />
     </div>
 );
+
+export default Index;

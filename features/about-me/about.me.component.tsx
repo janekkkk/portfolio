@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default function AboutMe() {
+export default function AboutMe(): JSX.Element {
     return (
         <div className="bg-white">
             <div className="max-w-7xl mx-auto py-16 px-4 sm:py-24 sm:px-6 lg:px-8">

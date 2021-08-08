@@ -6,7 +6,9 @@ const posts = [
         href: '#',
         category: { name: 'Article', href: '#' },
         description:
-            'Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto accusantium praesentium eius, ut atque fuga culpa, similique sequi cum eos quis dolorum.',
+            'Lorem ipsum dolor sit amet consectetur adipisicing elit. ' +
+            'Architecto accusantium praesentium eius, ut atque fuga culpa, ' +
+            'similique sequi cum eos quis dolorum.',
         date: 'Mar 16, 2020',
         datetime: '2020-03-16',
         imageUrl:
@@ -24,7 +26,10 @@ const posts = [
         href: '#',
         category: { name: 'Video', href: '#' },
         description:
-            'Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit facilis asperiores porro quaerat doloribus, eveniet dolore. Adipisci tempora aut inventore optio animi., tempore temporibus quo laudantium.',
+            'Lorem ipsum dolor sit amet consectetur adipisicing elit. ' +
+            'Velit facilis asperiores porro quaerat doloribus, eveniet dolore. ' +
+            'Adipisci tempora aut inventore optio animi., tempore temporibus ' +
+            'quo laudantium.',
         date: 'Mar 10, 2020',
         datetime: '2020-03-10',
         imageUrl:
@@ -57,7 +62,7 @@ const posts = [
     },
 ];
 
-export default function Posts() {
+export default function Posts(): JSX.Element {
     return (
         <div className="relative bg-gray-50 pt-16 pb-20 px-4 sm:px-6 lg:pt-24 lg:pb-28 lg:px-8">
             <div className="absolute inset-0">

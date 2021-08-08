@@ -64,7 +64,7 @@ const navigation = [
     },
 ];
 
-export default function Footer() {
+export default function Footer(): JSX.Element {
     return (
         <footer className="bg-white">
             <div className="max-w-7xl mx-auto py-12 px-4 sm:px-6 md:flex md:items-center md:justify-between lg:px-8">
