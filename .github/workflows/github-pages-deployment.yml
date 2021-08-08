@@ -12,12 +12,13 @@ jobs:
 
         steps:
             - name: Checkout 🛎️
-              uses: actions/checkout@v2 # If you're using actions/checkout@v2 you must set persist-credentials to false in most cases for the deployment to work correctly.
+              uses: actions/checkout@v2.3.1
               with:
                   persist-credentials: false
 
             - name: Set email
               run: git config --global user.email "${{ secrets.adminemail }}"
+
             - name: Set username
               run: git config --global user.name "${{ secrets.adminname }}"
 
@@ -34,17 +35,15 @@ jobs:
                   restore-keys: |
                       ${{ runner.os }}-node-
 
-            #- name: Install and Build 🔧 # This example project is built using npm and outputs the result to the 'build' folder. Replace with the commands required to build your project, or remove this step entirely if your site is pre-built.
-            # uses: actions/setup-node@v1
-            - run: npm install
-            - run: npm run build
-            - run: npm run export
-              env:
-                  CI: true
+            - name: Install and Build 🔧 # Builds app to the /out directory.
+              run: |
+                  npm install
+                  npm run build
+                  npm run export
 
             - name: Deploy 🚀
               uses: JamesIves/github-pages-deploy-action@4.1.4
               with:
                   branch: gh-pages # The branch the action should deploy to.
                   folder: out # The folder the action should deploy.
-                  clean: true # Automatically remove deleted files from the deploy branch
+                  clean: true # Automatically remove deleted files from the deploy branch.
