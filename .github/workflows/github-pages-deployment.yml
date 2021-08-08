@@ -40,6 +40,8 @@ jobs:
                   npm install
                   npm run build
                   npm run export
+                  ls
+                  pwd
 
             - name: Deploy 🚀
               uses: JamesIves/github-pages-deploy-action@4.1.4
