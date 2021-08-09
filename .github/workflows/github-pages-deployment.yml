@@ -42,10 +42,10 @@ jobs:
                   npm run export
 
             - name: Copy .nojekyll
-                uses: canastro/copy-file-action@master
-                with:
-                  source: "./.nojekyll"
-                  target: "./out/.nojekyll"
+              uses: canastro/copy-file-action@master
+              with:
+                  source: './.nojekyll'
+                  target: './out/.nojekyll§'
 
             - name: Deploy 🚀
               uses: JamesIves/github-pages-deploy-action@4.1.4
