@@ -25,7 +25,7 @@ class Layout extends React.Component<{ children: unknown; title: string; descrip
         const { children, title, description } = this.props;
 
         return (
-            <div className="flex flex-col justify-center min-h-screen py-2">
+            <div className="flex flex-col justify-center items-start max-w-4xl mx-auto min-h-screen py-2">
                 <Head>
                     <title>{title}</title>
                     <meta name="description" content={description} />
