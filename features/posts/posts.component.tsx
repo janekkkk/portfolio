@@ -1,5 +1,5 @@
 import React from 'react';
-import Image from 'next/image';
+import { useSpotifyService } from '@/shared/services/spotify/spotify.service';
 
 const posts = [
     {
@@ -79,7 +79,7 @@ export default function Posts(): JSX.Element {
                     {posts.map((post) => (
                         <div key={post.title} className="flex flex-col rounded-lg shadow-lg overflow-hidden">
                             <div className="flex-shrink-0">
-                                <Image className="h-48 w-full object-cover" src={post.imageUrl} alt="" />
+                                <img className="h-48 w-full object-cover" src={post.imageUrl} alt="" />
                             </div>
                             <div className="flex-1 bg-white p-6 flex flex-col justify-between">
                                 <div className="flex-1">
@@ -95,11 +95,7 @@ export default function Posts(): JSX.Element {
                                     <div className="flex-shrink-0">
                                         <a href={post.author.href}>
                                             <span className="sr-only">{post.author.name}</span>
-                                            <Image
-                                                className="h-10 w-10 rounded-full"
-                                                src={post.author.imageUrl}
-                                                alt=""
-                                            />
+                                            <img className="h-10 w-10 rounded-full" src={post.author.imageUrl} alt="" />
                                         </a>
                                     </div>
                                     <div className="ml-3">

@@ -32,9 +32,11 @@ class Layout extends React.Component<{ children: unknown; title: string; descrip
                     <link rel="icon" href="/favicon.ico" />
                 </Head>
 
-                <main className="flex flex-col w-full flex-1 px-20">{children}</main>
+                <div className="px-8">
+                    <main className="flex flex-col w-full flex-1">{children}</main>
 
-                <Footer />
+                    <Footer />
+                </div>
             </div>
         );
     }
