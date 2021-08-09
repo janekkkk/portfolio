@@ -7,7 +7,7 @@ console.log('PROD?', isProd);
  * @type {import('next').NextConfig}
  **/
 module.exports = withGoogleFonts({
-    assetPrefix: isProd ? './' : '',
+    assetPrefix: isProd ? '/' : '',
     googleFonts: {
         fonts: ['https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap'],
     },
