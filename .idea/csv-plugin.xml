@@ -17,6 +17,20 @@
             </Attribute>
           </value>
         </entry>
+        <entry key="/features/core/layout/styles.scss">
+          <value>
+            <Attribute>
+              <option name="separator" value=":" />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/shared/services/spotify.service.tsx">
+          <value>
+            <Attribute>
+              <option name="separator" value=";" />
+            </Attribute>
+          </value>
+        </entry>
       </map>
     </option>
   </component>
