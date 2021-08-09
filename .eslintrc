@@ -20,7 +20,8 @@
     "jest",
     "prettier",
     "react",
-    "standard"
+    "standard",
+    "tailwindcss"
   ],
   "parserOptions": {
     "parser": "@typescript-eslint/parser",
