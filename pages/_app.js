@@ -1,7 +1,6 @@
 import React from 'react';
 import '../features/core/layout/styles.scss';
 import { QueryClient, QueryClientProvider } from 'react-query';
-import { ReactQueryDevtools } from 'react-query/devtools';
 import { SpotifyProvider } from '../shared/services/spotify/spotify.service';
 
 const queryClient = new QueryClient();
@@ -14,7 +13,6 @@ const MyApp = ({ Component, pageProps }) => {
                 <SpotifyProvider>
                     <Component {...pageProps} />
                 </SpotifyProvider>
-                <ReactQueryDevtools initialIsOpen />
             </QueryClientProvider>
         </React.Fragment>
     );
