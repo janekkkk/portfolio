@@ -9,6 +9,10 @@ module.exports = {
             fontFamily: {
                 sans: ['Inter var', ...defaultTheme.fontFamily.sans],
             },
+            colors: {
+                luminis: '#DC8115',
+                han: '#e50056',
+            },
         },
     },
     variants: {},
