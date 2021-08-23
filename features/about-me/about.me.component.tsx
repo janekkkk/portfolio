@@ -1,18 +1,19 @@
 import React from 'react';
 import { JSX } from '@babel/types';
-import TypeWriterEffect from 'react-typewriter-effect';
+import dynamic from 'next/dynamic';
 
-const isBrowser = typeof window !== 'undefined';
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+const TypeWriterEffectNoSSR = dynamic(() => import('react-typewriter-effect'), { ssr: false }) as any;
 
 export default function AboutMe({ className = '' }): JSX.Element {
-    if (isBrowser) {
+    if (process.browser) {
         return (
             <div className={className}>
                 <h1 className="mt-1 font-bold text-3xl md:text-6xl tracking-normal mb-4 text-black dark:text-white">
                     Hey, I&apos;m Janek Ozga
                 </h1>
                 <div className="max-w-xl mt-5 text-xl mb-16">
-                    <TypeWriterEffect
+                    <TypeWriterEffectNoSSR
                         textStyle={{
                             fontSize: '1.5rem',
                             minHeight: '1.5rem',
