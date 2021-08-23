@@ -1,11 +1,14 @@
 import React from 'react';
 import { JSX } from '@babel/types';
-import dynamic from 'next/dynamic';
-
-// eslint-disable-next-line @typescript-eslint/no-explicit-any
-const TypeWriterEffectNoSSR = dynamic(() => import('react-typewriter-effect'), { ssr: false }) as any;
+import GraphemeSplitter from 'grapheme-splitter';
+import Typewriter from 'typewriter-effect';
 
 export default function AboutMe({ className = '' }): JSX.Element {
+    const stringSplitter = (string) => {
+        const splitter = new GraphemeSplitter();
+        return splitter.splitGraphemes(string);
+    };
+
     if (process.browser) {
         return (
             <div className={className}>
@@ -13,25 +16,26 @@ export default function AboutMe({ className = '' }): JSX.Element {
                     Hey, I&apos;m Janek Ozga
                 </h1>
                 <div className="max-w-xl mt-5 text-xl mb-16">
-                    <TypeWriterEffectNoSSR
-                        textStyle={{
-                            fontSize: '1.5rem',
-                            minHeight: '1.5rem',
+                    <Typewriter
+                        options={{
+                            autoStart: true,
+                            loop: true,
+                            wrapperClassName: 'text-3xl',
+                            cursorClassName: 'text-3xl',
+                            pauseFor: 2500,
+                            delay: 100,
+                            stringSplitter,
+                            strings: [
+                                'Frontend developer 👨‍💻',
+                                'Tree planter 🌱🌳',
+                                'Avid runner 🏃‍💨',
+                                'Tinkerer ‍💻',
+                                'Lover of peanut butter 🥜',
+                                'DevOps enthousiast 👨‍💻',
+                                'Gamer 🎮',
+                                'Software engineer 👨‍💻',
+                            ],
                         }}
-                        startDelay={0}
-                        cursorColor="#3F3D56"
-                        multiText={[
-                            'Frontend developer',
-                            'Tree planter',
-                            'Avid runner',
-                            'Tinkerer',
-                            'Lover of peanut butter',
-                            'DevOps enthousiast',
-                            'Gamer',
-                            'Software engineer',
-                        ]}
-                        multiTextDelay={3000}
-                        typeSpeed={70}
                     />
                 </div>
             </div>
