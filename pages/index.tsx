@@ -6,9 +6,9 @@ import Timeline from '@/features/timeline/timeline.component';
 
 const Index = (): JSX.Element => (
     <Layout>
-        <AboutMe className="py-12" />
-        <Timeline />
-        <Posts />
+        <AboutMe className="mt-8 md:mt-12 mb-0" />
+        <Timeline className="mt-4 md:mt-0" />
+        <Posts className="mt-12 md:mt-14" />
     </Layout>
 );
 

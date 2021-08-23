@@ -2,7 +2,7 @@ import React from 'react';
 
 export default function TimelineItem({ timeline, timelineItem, index }): JSX.Element {
     return (
-        <div className="relative pb-8">
+        <div className="relative">
             {index !== timeline.length - 1 ? (
                 <span className="absolute top-4 left-4 -ml-px h-full w-0.5 bg-gray-200" aria-hidden="true" />
             ) : null}
