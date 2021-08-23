@@ -4,9 +4,9 @@ import GraphemeSplitter from 'grapheme-splitter';
 import Typewriter from 'typewriter-effect';
 
 export default function AboutMe({ className = '' }): JSX.Element {
-    const stringSplitter = (string) => {
+    const stringSplitter = (text: string): string => {
         const splitter = new GraphemeSplitter();
-        return splitter.splitGraphemes(string);
+        return splitter.splitGraphemes(text) as unknown as string;
     };
 
     if (process.browser) {
@@ -22,7 +22,6 @@ export default function AboutMe({ className = '' }): JSX.Element {
                             loop: true,
                             wrapperClassName: 'text-3xl',
                             cursorClassName: 'text-3xl',
-                            pauseFor: 2500,
                             delay: 100,
                             stringSplitter,
                             strings: [
