@@ -2,12 +2,12 @@ import React from 'react';
 import TimelineItem from '@/features/timeline/timeline-item/timeline-item.component';
 import { timeline2018, timeline2019, timeline2020, timeline2021 } from '@/features/timeline/timline-lists.data';
 
-export default function Timeline({ className }): JSX.Element {
+export default function Timeline({ className = '' }): JSX.Element {
     return (
         <div className={className}>
             <h2 className="block text-2xl md:text-4xl">Timeline</h2>
 
-            <div className="block">
+            <div className="mt-4">
                 <h3 className="block">2021</h3>
 
                 <ul>
