@@ -8,7 +8,7 @@ const posts = [
         description:
             'Recently I’ve been getting into code quality tools as I’ve just started my graduation internship project. ' +
             'I wanted to save my findings for future reference but also share it with my new colleagues and the rest of the world.',
-        date: '29 Nov, 2020',
+        date: '29 Nov, 2017',
         datetime: '2017-11-29',
         imageUrl: 'https://miro.medium.com/max/2000/1*n_AHPX0MrFPveTqDft9VpQ.jpeg',
         readingTime: '4 min',
@@ -43,7 +43,11 @@ export default function Posts({ className = '' }): JSX.Element {
                                 <div className="flex-shrink-0">
                                     <a href={post.author.href}>
                                         <span className="sr-only">{post.author.name}</span>
-                                        <img className="h-10 w-10 rounded-full" src={post.author.imageUrl} alt="" />
+                                        <img
+                                            className="h-10 w-10 rounded-full"
+                                            src={post.author.imageUrl}
+                                            alt="Portrait photo of Janek"
+                                        />
                                     </a>
                                 </div>
                                 <div className="ml-3">
