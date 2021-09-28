@@ -7,7 +7,7 @@ export default function Timeline({ className = '' }): JSX.Element {
         <div className={className}>
             <h2 className="block text-2xl md:text-4xl">Timeline</h2>
 
-            <div className="mt-4">
+            <div className="mt-5">
                 <h3 className="block">2021</h3>
 
                 <ul>
