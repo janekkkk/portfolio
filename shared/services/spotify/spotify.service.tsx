@@ -10,9 +10,9 @@ const TOKEN_ENDPOINT = 'https://accounts.spotify.com/api/token';
 const CLIENT_ID = process.env.SPOTIFY_CLIENT_ID || '13bd4106d0974c38b7c9263dccf7841d';
 const CLIENT_SECRET = process.env.SPOTIFY_CLIENT_SECRET || '61257a7c736b4dec8c6fa15c695d3ce5';
 const REFRESH_TOKEN =
+    process.env.REFRESH_TOKEN ||
     'AQAiRr1Thu4iYnJt0IayIsd7xITt5W0qPy5vy7eTZ-_YhrNhVRQa48ti_Gn_LpTU1O2DGCCgqMqHimO06jJMkTuk2ZusHyE1sZiOAw3Un5Jk14-VO8IXPIF98G4oc9SG1uA';
-const CODE =
-    'AQDFx5Ky0QlMILUdkJ0TkNuPEWtWoG1e35Xo4GfZXWZUlqA6cF-BDGBlH8jWa9LSAenNN0WRZTckA6kuhzoTc25dWyh1SU0ZYYKuygTHlMuz-2E_pYqviVmNb_nzOoKEe4OTXyBcWNvGc10nPf3-fotV0BCHDdaajhyCki2zRNqKEsQxbwDzKIdsiZCF078sZwEpjsNB9_bvCss';
+
 const basic = Buffer.from(`${CLIENT_ID}:${CLIENT_SECRET}`).toString('base64');
 
 const fetchAccessToken = async (): Promise<string> => {

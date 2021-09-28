@@ -1,6 +1,15 @@
 import React from 'react';
+import { TimelineItemModel } from '@/features/timeline/timeline-item.model';
 
 export default function TimelineItem({ timeline, timelineItem, index }): JSX.Element {
+    const getPostfix = (item: TimelineItemModel): string => {
+        if (item.postfix) {
+            return ` ${item.postfix}`;
+        }
+
+        return '';
+    };
+
     return (
         <div className="relative">
             {index !== timeline.length - 1 ? (
@@ -31,6 +40,7 @@ export default function TimelineItem({ timeline, timelineItem, index }): JSX.Ele
                             ) : (
                                 <span className="font-medium text-gray-900">{timelineItem.target}</span>
                             )}
+                            {getPostfix(timelineItem)}
                         </p>
                     </div>
                     <div className="text-right text-sm whitespace-nowrap text-gray-500">

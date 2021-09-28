@@ -2,6 +2,7 @@ import React from 'react';
 
 export interface TimelineItemModel {
     content: string;
+    postfix?: string;
     target: string;
     href?: string;
     date: string;

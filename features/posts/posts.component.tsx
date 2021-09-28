@@ -6,7 +6,7 @@ export default function Posts({ className = '' }): JSX.Element {
         <div className={`${className} block`}>
             <h2 className="block text-2xl md:text-4xl">On the web</h2>
 
-            <div className="mt-4 max-w-lg mx-auto grid gap-5 md:grid-cols-2 lg:grid-cols-3 lg:max-w-none">
+            <div className="mt-6 max-w-lg mx-auto grid gap-5 md:grid-cols-2 lg:grid-cols-3 lg:max-w-none">
                 {posts.map((post) => (
                     <div key={post.title} className="flex flex-col rounded-lg shadow-lg overflow-hidden">
                         <div className="flex-shrink-0">
