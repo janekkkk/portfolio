@@ -31,6 +31,13 @@
             </Attribute>
           </value>
         </entry>
+        <entry key="/features/posts/posts.component.tsx">
+          <value>
+            <Attribute>
+              <option name="separator" value=";" />
+            </Attribute>
+          </value>
+        </entry>
         <entry key="/pages/index.tsx">
           <value>
             <Attribute>

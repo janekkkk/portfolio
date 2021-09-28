@@ -1,29 +1,12 @@
 import React from 'react';
-
-const posts = [
-    {
-        title: 'Prettier Linting',
-        href: 'https://medium.com/@janekkkk/prettier-linting-c2aa755e583b',
-        category: { name: 'Article', href: 'https://medium.com/@janekkkk/prettier-linting-c2aa755e583b' },
-        description:
-            'Recently I’ve been getting into code quality tools as I’ve just started my graduation internship project. ' +
-            'I wanted to save my findings for future reference but also share it with my new colleagues and the rest of the world.',
-        date: '29 Nov, 2017',
-        datetime: '2017-11-29',
-        imageUrl: 'https://miro.medium.com/max/2000/1*n_AHPX0MrFPveTqDft9VpQ.jpeg',
-        readingTime: '4 min',
-        author: {
-            name: 'Janek Ozga',
-            href: 'https://medium.com/@janekkkk',
-            imageUrl: 'https://miro.medium.com/fit/c/64/64/0*xVkUc83eWIWGw4uA.jpg',
-        },
-    },
-];
+import { posts } from '@/features/posts/posts.data';
 
 export default function Posts({ className = '' }): JSX.Element {
     return (
         <div className={`${className} block`}>
-            <div className="">
+            <h2 className="block text-2xl md:text-4xl">On the web</h2>
+
+            <div className="mt-4 max-w-lg mx-auto grid gap-5 md:grid-cols-2 lg:grid-cols-3 lg:max-w-none">
                 {posts.map((post) => (
                     <div key={post.title} className="flex flex-col rounded-lg shadow-lg overflow-hidden">
                         <div className="flex-shrink-0">
