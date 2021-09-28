@@ -23,7 +23,7 @@ const posts = [
 export default function Posts({ className = '' }): JSX.Element {
     return (
         <div className={`${className} block`}>
-            <div className="grid gap-5 lg:grid-cols-3 lg:max-w-none">
+            <div className="">
                 {posts.map((post) => (
                     <div key={post.title} className="flex flex-col rounded-lg shadow-lg overflow-hidden">
                         <div className="flex-shrink-0">
