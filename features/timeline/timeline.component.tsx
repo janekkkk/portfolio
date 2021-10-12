@@ -6,11 +6,18 @@ export default function Timeline({ className = '' }): JSX.Element {
     return (
         <div className={className}>
             <h2 className="block text-2xl md:text-4xl">Timeline</h2>
+            <p>
+                You can also{' '}
+                <a href="/CV.pdf" target="_blank">
+                    download my resume
+                </a>{' '}
+                or contact me at <a href="mailto:iam@janekozga.nl">iam@janekozga.nl</a>
+            </p>
 
-            <div className="mt-5">
+            <div className="mt-5 block">
                 <h3 className="block">2021</h3>
 
-                <ul>
+                <ul className="block">
                     {timeline2021.map((timelineItem, index) => (
                         <li key={index + timelineItem.date} className="pb-8 last:pb-0">
                             <TimelineItem timeline={timeline2021} timelineItem={timelineItem} index={index} />
