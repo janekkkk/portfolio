@@ -9,7 +9,7 @@ export default function Timeline({ className = '' }): JSX.Element {
     const toggle = (): void => {
         setIsHidden(!isHidden);
         window.location = `${('' + window.location).replace(/#[A-Za-z0-9_]*$/, '')}#timeline` as unknown as Location;
-    }
+    };
 
     return (
         <div className={className} id="timeline">
@@ -48,11 +48,11 @@ export default function Timeline({ className = '' }): JSX.Element {
                 </ul>
             </div>
 
-            <div className={'mt-4 ' + classNames({'hidden': !isHidden})} onClick={ () => toggle()}>
-                <p className="hover:cursor-pointer">Read all timelines -></p>
+            <div className={'mt-4 ' + classNames({ hidden: !isHidden })} onClick={() => toggle()}>
+                <p className="hover:cursor-pointer">Read all timelines {'->'}</p>
             </div>
 
-            <div className={classNames({'hidden': isHidden})}>
+            <div className={classNames({ hidden: isHidden })}>
                 <hr className="border border-gray-200 dark:border-gray-600 w-full my-8" />
 
                 <div>
@@ -81,12 +81,10 @@ export default function Timeline({ className = '' }): JSX.Element {
                     </ul>
                 </div>
 
-                <div className={'mt-4 ' + classNames({'hidden': isHidden})} onClick={ () => toggle()}>
+                <div className={'mt-4 ' + classNames({ hidden: isHidden })} onClick={() => toggle()}>
                     <p className="hover:cursor-pointer">Hide timelines</p>
                 </div>
             </div>
-
-
         </div>
     );
 }
