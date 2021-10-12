@@ -5,7 +5,7 @@ import React from 'react';
 class Layout extends React.Component<{ children: unknown; title: string; description: string }> {
     static defaultProps = {
         title: 'Janek Ozga - Software Engineer',
-        description: 'Front-end developer, JavaScript enthusiast, tree hugger and avid runner.',
+        description: 'Front-end developer, JavaScript enthusiast, tree planter and avid runner.',
     };
 
     private addCommentInSource(): void {
