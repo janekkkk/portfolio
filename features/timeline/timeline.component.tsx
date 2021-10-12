@@ -8,7 +8,7 @@ export default function Timeline({ className = '' }): JSX.Element {
 
     const toggle = (): void => {
         setIsHidden(!isHidden);
-        window.location = `${("" + window.location).replace(/#[A-Za-z0-9_]*$/, '')}#timeline`;
+        window.location = `${('' + window.location).replace(/#[A-Za-z0-9_]*$/, '')}#timeline` as unknown as Location;
     }
 
     return (
