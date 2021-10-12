@@ -1,5 +1,6 @@
 import React from 'react';
 import { posts } from '@/features/posts/posts.data';
+import LinesEllipsis from 'react-lines-ellipsis';
 
 export default function Posts({ className = '' }): JSX.Element {
     return (
@@ -18,8 +19,24 @@ export default function Posts({ className = '' }): JSX.Element {
                                     <a href={post.category.href}>{post.category.name}</a>
                                 </p>
                                 <a href={post.href} className="block mt-2">
-                                    <p className="text-xl font-semibold text-gray-900">{post.title}</p>
-                                    <p className="mt-3 text-base text-gray-500">{post.description}</p>
+                                    <p className="text-xl font-semibold text-gray-900">
+                                        <LinesEllipsis
+                                            text={post.title}
+                                            maxLine="3"
+                                            ellipsis="..."
+                                            trimRight
+                                            basedOn="letters"
+                                        />
+                                    </p>
+                                    <p className="mt-3 text-base text-gray-500">
+                                        <LinesEllipsis
+                                            text={post.description}
+                                            maxLine="6"
+                                            ellipsis="..."
+                                            trimRight
+                                            basedOn="letters"
+                                        />
+                                    </p>
                                 </a>
                             </div>
                             <div className="mt-6 flex items-center">

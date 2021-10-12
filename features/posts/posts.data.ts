@@ -2,7 +2,7 @@ export const posts = [
     {
         title: 'Prettier Linting',
         href: 'https://medium.com/@janekkkk/prettier-linting-c2aa755e583b',
-        category: { name: 'Article', href: 'https://medium.com/@janekkkk/prettier-linting-c2aa755e583b' },
+        category: { name: 'Blog', href: 'https://medium.com/@janekkkk/prettier-linting-c2aa755e583b' },
         description:
             'Recently I’ve been getting into code quality tools as I’ve just started my graduation internship project. ' +
             'I wanted to save my findings for future reference but also share it with my new colleagues and the rest of the world.',
