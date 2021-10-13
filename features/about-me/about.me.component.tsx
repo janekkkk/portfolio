@@ -9,13 +9,13 @@ export default function AboutMe({ className = '' }): JSX.Element {
         return splitter.splitGraphemes(text) as unknown as string;
     };
 
-    if (process.browser) {
-        return (
-            <div className={className}>
-                <h1 className="mt-8 font-bold text-3xl md:text-6xl tracking-normal mb-4 text-black dark:text-white">
-                    Hey, I&apos;m Janek Ozga
-                </h1>
-                <div className="max-w-xl mt-5 text-xl mb-16">
+    return (
+        <div className={className}>
+            <h1 className="mt-8 font-bold text-3xl md:text-6xl tracking-normal mb-4 text-black dark:text-white">
+                Hey, I&apos;m Janek Ozga
+            </h1>
+            <div className="max-w-xl mt-5 text-xl mb-16">
+                {process.browser && (
                     <Typewriter
                         options={{
                             autoStart: true,
@@ -38,10 +38,8 @@ export default function AboutMe({ className = '' }): JSX.Element {
                             ],
                         }}
                     />
-                </div>
+                )}
             </div>
-        );
-    } else {
-        return null;
-    }
+        </div>
+    );
 }
