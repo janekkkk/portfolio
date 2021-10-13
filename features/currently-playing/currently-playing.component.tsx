@@ -34,7 +34,12 @@ export default function CurrentlyPlaying(): JSX.Element {
 
     if (nowPlaying) {
         return (
-            <div className="inline-flex flex-row w-full max-w-full truncate items-center justify-center">
+            <a
+                href="https://open.spotify.com/user/1141254664?si=7ffb0c596c384ccf"
+                target="_blank"
+                className="inline-flex flex-row w-full max-w-full truncate items-center justify-center hover:cursor-pointer"
+                rel="noreferrer"
+            >
                 <svg className="h-4 w-4 inline mr-2" viewBox="0 0 168 168">
                     <path
                         fill="#1ED760"
@@ -44,7 +49,7 @@ export default function CurrentlyPlaying(): JSX.Element {
                 <p className="text-gray-800 dark:text-gray-200 font-medium">{nowPlaying.item.name}</p>
                 <span className="mx-2 text-gray-500 dark:text-gray-300"> – </span>
                 <p className="text-gray-500 dark:text-gray-300 max-w-max truncate">{nowPlaying.item.artists[0].name}</p>
-            </div>
+            </a>
         );
     } else return null;
 }
