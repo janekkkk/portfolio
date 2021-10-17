@@ -5,10 +5,6 @@ const isProd = process.env.NODE_ENV === 'production';
  * @type {import('next').NextConfig}
  **/
 module.exports = withGoogleFonts({
-    i18n: {
-        locales: ['en-US'],
-        defaultLocale: 'en-US',
-    },
     assetPrefix: './',
     trailingSlash: true,
     googleFonts: {
