@@ -27,7 +27,7 @@ export default function AboutMe({ className = '' }): JSX.Element {
                             strings: [
                                 'Frontend developer 👨‍💻',
                                 'Tree planter 🌱🌳',
-                                'Dutchie 🇳🇱',
+                                'Dutchie 🇳🇱 and European 🇪🇺',
                                 'Avid hiker and runner 🏃‍💨',
                                 'Tinkerer 🪛‍💻',
                                 'Lover of peanut butter 🥜',
