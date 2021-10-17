@@ -12,7 +12,7 @@ export default function AboutMe({ className = '' }): JSX.Element {
     return (
         <div className={className}>
             <h1 className="mt-8 font-bold text-3xl md:text-6xl tracking-normal mb-4 text-black dark:text-white">
-                Hey, I&apos;m Janek Ozga
+                Hey there — I&apos;m Janek.
             </h1>
             <div className="max-w-xl mt-5 text-xl mb-16">
                 {process.browser && (
@@ -27,14 +27,16 @@ export default function AboutMe({ className = '' }): JSX.Element {
                             strings: [
                                 'Frontend developer 👨‍💻',
                                 'Tree planter 🌱🌳',
+                                'Dutchie 🇳🇱',
                                 'Avid hiker and runner 🏃‍💨',
                                 'Tinkerer 🪛‍💻',
                                 'Lover of peanut butter 🥜',
                                 'DevOps enthusiast 🤖',
-                                'PC Gamer 🎮',
+                                'PC gamer 🎮',
                                 'CSS fan 🎨',
                                 'Petter of cats 🐱',
                                 'Software engineer 👨‍💻',
+                                'Music lover 🎵',
                             ],
                         }}
                     />

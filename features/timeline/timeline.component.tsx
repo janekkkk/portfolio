@@ -14,13 +14,6 @@ export default function Timeline({ className = '' }): JSX.Element {
     return (
         <div className={className} id="timeline">
             <h2 className="block text-2xl md:text-4xl">Timeline</h2>
-            <p>
-                You can also{' '}
-                <a href="/CV.pdf" target="_blank">
-                    download my resume
-                </a>{' '}
-                or contact me at <a href="mailto:iam@janekozga.nl">iam@janekozga.nl</a>
-            </p>
 
             <div className="mt-5 block">
                 <h3 className="block">2021</h3>
@@ -49,7 +42,7 @@ export default function Timeline({ className = '' }): JSX.Element {
             </div>
 
             <div className={'mt-4 ' + classNames({ hidden: !isHidden })} onClick={() => toggle()}>
-                <p className="hover:cursor-pointer">Read all timelines {'->'}</p>
+                <p className="hover:cursor-pointer">Show all timelines {'→'}</p>
             </div>
 
             <div className={classNames({ hidden: isHidden })}>
@@ -82,7 +75,7 @@ export default function Timeline({ className = '' }): JSX.Element {
                 </div>
 
                 <div className={'mt-4 ' + classNames({ hidden: isHidden })} onClick={() => toggle()}>
-                    <p className="hover:cursor-pointer">Hide timelines</p>
+                    <p className="hover:cursor-pointer">Hide timelines ←</p>
                 </div>
             </div>
         </div>

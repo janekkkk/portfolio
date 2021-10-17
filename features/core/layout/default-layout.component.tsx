@@ -6,8 +6,7 @@ import { NextSeo } from 'next-seo';
 export default function DefaultLayout({ children }): JSX.Element {
     const title = 'Janek Ozga';
     const description =
-        "I'm a frontend developer, tree planter, and a fun guy to hang around with. " +
-        'I like to build things that others find helpful.';
+        "I'm a frontend developer, tree planter, and a fun guy to hang around with. " + 'I like to build things.';
 
     const siteURL = 'https://janekozga.nl';
     const ogImageURL = '/og.png';
