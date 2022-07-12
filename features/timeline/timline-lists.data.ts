@@ -7,7 +7,7 @@ export const timeline2022: TimelineItemModel[] = [
         target: 'Kate Innovations',
         postfix: 'as a frontend lead',
         href: 'https://kateinnovations.com/',
-        date: 'January',
+        date: 'February',
         icon: BriefcaseIcon,
         iconBackground: 'bg-kate',
     },

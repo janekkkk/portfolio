@@ -1,9 +1,9 @@
-import Footer from '@/core/footer.component';
+import { Footer } from '@/core/footer.component';
 import React, { useEffect } from 'react';
 import { useRouter } from 'next/router';
 import { NextSeo } from 'next-seo';
 
-export default function DefaultLayout({ children }): JSX.Element {
+export const DefaultLayout = ({ children }): JSX.Element => {
     const title = 'Janek Ozga';
     const description =
         "I'm a frontend developer, tree planter, and a fun guy to hang around with. " + 'I like to build things.';
@@ -83,4 +83,4 @@ export default function DefaultLayout({ children }): JSX.Element {
             </div>
         </>
     );
-}
+};

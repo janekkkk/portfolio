@@ -3,7 +3,7 @@ import { JSX } from '@babel/types';
 import GraphemeSplitter from 'grapheme-splitter';
 import Typewriter from 'typewriter-effect';
 
-export default function AboutMe({ className = '' }): JSX.Element {
+export const AboutMe = ({ className = '' }): JSX.Element => {
     const stringSplitter = (text: string): string => {
         const splitter = new GraphemeSplitter();
         return splitter.splitGraphemes(text) as unknown as string;
@@ -34,6 +34,8 @@ export default function AboutMe({ className = '' }): JSX.Element {
                                 'DevOps enthusiast 🤖',
                                 'PC gamer 🎮',
                                 'CSS fan 🎨',
+                                'Permaculture gardener 🌱',
+                                'DJ  🎶',
                                 'Petter of cats 🐱',
                                 'Software engineer 👨‍💻',
                                 'Music lover 🎵',
@@ -44,4 +46,4 @@ export default function AboutMe({ className = '' }): JSX.Element {
             </div>
         </div>
     );
-}
+};

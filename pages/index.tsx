@@ -1,9 +1,9 @@
 import React from 'react';
-import Posts from '@/features/posts/posts.component';
-import AboutMe from '@/features/about-me/about.me.component';
-import DefaultLayout from '@/core/layout/default-layout.component';
-import Timeline from '@/features/timeline/timeline.component';
-import Contact from '@/features/contact/contact.component';
+import { Posts } from '@/features/posts/posts.component';
+import { AboutMe } from '@/features/about-me/about.me.component';
+import { DefaultLayout } from '@/core/layout/default-layout.component';
+import { Timeline } from '@/features/timeline/timeline.component';
+import { Contact } from '@/features/contact/contact.component';
 
 const Index = (): JSX.Element => (
     <DefaultLayout>

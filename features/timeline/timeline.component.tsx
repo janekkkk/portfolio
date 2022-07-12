@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import TimelineItem from '@/features/timeline/timeline-item/timeline-item.component';
+import { TimelineItem } from '@/features/timeline/timeline-item/timeline-item.component';
 import {
     timeline2018,
     timeline2019,
@@ -9,7 +9,7 @@ import {
 } from '@/features/timeline/timline-lists.data';
 import classNames from 'classnames';
 
-export default function Timeline({ className = '' }): JSX.Element {
+export const Timeline = ({ className = '' }): JSX.Element => {
     const [isHidden, setIsHidden] = useState<boolean>(true);
 
     const toggle = (): void => {
@@ -62,7 +62,7 @@ export default function Timeline({ className = '' }): JSX.Element {
             </div>
 
             <div className={'mt-4 ' + classNames({ hidden: !isHidden })} onClick={() => toggle()}>
-                <p className="hover:cursor-pointer">Show all timelines {'→'}</p>
+                <p className="hover:cursor-pointer">Show all timelines →</p>
             </div>
 
             <div className={classNames({ hidden: isHidden })}>
@@ -100,4 +100,4 @@ export default function Timeline({ className = '' }): JSX.Element {
             </div>
         </div>
     );
-}
+};
