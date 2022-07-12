@@ -1,38 +1,9 @@
-import { useSpotifyService } from '@/shared/services/spotify/spotify.service';
-import { useEffect, useState } from 'react';
-import { CurrentlyPlayingSpotify } from '@/shared/services/spotify/currently-playing-spotify.model';
+import { useSpotify } from '@/shared/services/spotify/spotify.hook';
 
 export const CurrentlyPlaying = (): JSX.Element => {
-    const spotifyService = useSpotifyService();
-    const [nowPlaying, setNowPlaying] = useState<CurrentlyPlayingSpotify | null>(null);
-    const notPlaying = {
-        is_playing: false,
-        item: {
-            name: 'Not playing',
-            artists: [{ name: 'Spotify' }],
-        },
-    } as CurrentlyPlayingSpotify;
+    const { spotify } = useSpotify();
 
-    useEffect(() => {
-        try {
-            // TODO find a way to let provider play nice with TS
-            // eslint-disable-next-line @typescript-eslint/ban-ts-comment
-            // @ts-ignore
-            spotifyService.fetchNowPlaying().then((currentlyPlaying: CurrentlyPlayingSpotify) => {
-                if (currentlyPlaying.is_playing) {
-                    setNowPlaying(currentlyPlaying);
-                } else {
-                    setNowPlaying(notPlaying);
-                }
-            });
-        } catch (e) {
-            setNowPlaying(notPlaying);
-        }
-
-        // eslint-disable-next-line react-hooks/exhaustive-deps
-    }, []);
-
-    if (nowPlaying) {
+    if (spotify) {
         return (
             <a
                 href="https://open.spotify.com/user/1141254664?si=7ffb0c596c384ccf"
@@ -55,9 +26,9 @@ export const CurrentlyPlaying = (): JSX.Element => {
                         78.756-7.245 109.83 11.202a7.823 7.823 0 012.74 10.733c-2.2 3.722-7.02 4.949-10.73 2.739z"
                     />
                 </svg>
-                <p className="text-gray-800 dark:text-gray-200 font-medium">{nowPlaying.item.name}</p>
+                <p className="text-gray-800 dark:text-gray-200 font-medium">{spotify.item.name}</p>
                 <span className="mx-2 text-gray-500 dark:text-gray-300"> – </span>
-                <p className="text-gray-500 dark:text-gray-300 max-w-max truncate">{nowPlaying.item.artists[0].name}</p>
+                <p className="text-gray-500 dark:text-gray-300 max-w-max truncate">{spotify.item.artists[0].name}</p>
             </a>
         );
     } else return null;
