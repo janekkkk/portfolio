@@ -1,9 +1,15 @@
 import React, { useState } from 'react';
-import TimelineItem from '@/features/timeline/timeline-item/timeline-item.component';
-import { timeline2018, timeline2019, timeline2020, timeline2021 } from '@/features/timeline/timline-lists.data';
+import { TimelineItem } from '@/features/timeline/timeline-item/timeline-item.component';
+import {
+    timeline2018,
+    timeline2019,
+    timeline2020,
+    timeline2021,
+    timeline2022,
+} from '@/features/timeline/timline-lists.data';
 import classNames from 'classnames';
 
-export default function Timeline({ className = '' }): JSX.Element {
+export const Timeline = ({ className = '' }): JSX.Element => {
     const [isHidden, setIsHidden] = useState<boolean>(true);
 
     const toggle = (): void => {
@@ -14,6 +20,20 @@ export default function Timeline({ className = '' }): JSX.Element {
     return (
         <div className={className} id="timeline">
             <h2 className="block text-2xl md:text-4xl">Timeline</h2>
+
+            <div className="mt-5 block">
+                <h3 className="block">2022</h3>
+
+                <ul className="block">
+                    {timeline2022.map((timelineItem, index) => (
+                        <li key={index + timelineItem.date} className="pb-8 last:pb-0">
+                            <TimelineItem timeline={timeline2021} timelineItem={timelineItem} index={index} />
+                        </li>
+                    ))}
+                </ul>
+            </div>
+
+            <hr className="border border-gray-200 dark:border-gray-600 w-full my-8" />
 
             <div className="mt-5 block">
                 <h3 className="block">2021</h3>
@@ -42,7 +62,7 @@ export default function Timeline({ className = '' }): JSX.Element {
             </div>
 
             <div className={'mt-4 ' + classNames({ hidden: !isHidden })} onClick={() => toggle()}>
-                <p className="hover:cursor-pointer">Show all timelines {'→'}</p>
+                <p className="hover:cursor-pointer">Show all timelines →</p>
             </div>
 
             <div className={classNames({ hidden: isHidden })}>
@@ -80,4 +100,4 @@ export default function Timeline({ className = '' }): JSX.Element {
             </div>
         </div>
     );
-}
+};

@@ -5,6 +5,7 @@
   },
   "extends": [
     "standard",
+    "standard-jsx",
     "eslint:recommended",
     "plugin:@typescript-eslint/eslint-recommended",
     "plugin:@typescript-eslint/recommended",
@@ -20,7 +21,6 @@
     "jest",
     "prettier",
     "react",
-    "standard",
     "tailwindcss"
   ],
   "parserOptions": {

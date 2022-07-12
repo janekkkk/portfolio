@@ -1,9 +1,9 @@
+// eslint-disable-next-line @typescript-eslint/no-var-requires
 const defaultTheme = require('tailwindcss/defaultTheme');
 
 module.exports = {
     mode: 'jit',
-    purge: ['./pages/**/*.{js,ts,jsx,tsx}', './shared/**/*.{js,ts,jsx,tsx}', './features/**/*.{js,ts,jsx,tsx}'],
-    darkMode: 'class', // or 'media' or 'class'
+    content: ['./pages/**/*.{js,ts,jsx,tsx}', './shared/**/*.{js,ts,jsx,tsx}', './features/**/*.{js,ts,jsx,tsx}'],
     theme: {
         extend: {
             fontFamily: {
@@ -12,6 +12,7 @@ module.exports = {
             colors: {
                 luminis: '#DC8115',
                 han: '#e50056',
+                kate: '#005b82',
             },
         },
     },

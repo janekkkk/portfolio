@@ -1,7 +1,7 @@
 import React from 'react';
 import { TimelineItemModel } from '@/features/timeline/timeline-item.model';
 
-export default function TimelineItem({ timeline, timelineItem, index }): JSX.Element {
+export const TimelineItem = ({ timeline, timelineItem, index }): JSX.Element => {
     const getPostfix = (item: TimelineItemModel): string => {
         if (item.postfix) {
             return ` ${item.postfix}`;
@@ -19,8 +19,7 @@ export default function TimelineItem({ timeline, timelineItem, index }): JSX.Ele
                 <div>
                     <span
                         className={`${timelineItem.iconBackground} h-8 w-8 rounded-full flex items-center justify-center
-                         ring-8 ring-white`}
-                    >
+                         ring-8 ring-white`}>
                         <timelineItem.icon className="h-5 w-5 text-white" aria-hidden="true" />
                     </span>
                 </div>
@@ -33,8 +32,7 @@ export default function TimelineItem({ timeline, timelineItem, index }): JSX.Ele
                                     href={timelineItem.href}
                                     target="_blank"
                                     className="font-medium text-gray-900"
-                                    rel="noreferrer"
-                                >
+                                    rel="noreferrer">
                                     {timelineItem.target}
                                 </a>
                             ) : (
@@ -50,4 +48,4 @@ export default function TimelineItem({ timeline, timelineItem, index }): JSX.Ele
             </div>
         </div>
     );
-}
+};

@@ -1,3 +1,4 @@
+// eslint-disable-next-line @typescript-eslint/no-var-requires
 const { withGoogleFonts } = require('nextjs-google-fonts');
 const isProd = process.env.NODE_ENV === 'production';
 
