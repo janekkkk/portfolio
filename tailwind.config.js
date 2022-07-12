@@ -1,3 +1,4 @@
+// eslint-disable-next-line @typescript-eslint/no-var-requires
 const defaultTheme = require('tailwindcss/defaultTheme');
 
 module.exports = {
@@ -12,6 +13,7 @@ module.exports = {
             colors: {
                 luminis: '#DC8115',
                 han: '#e50056',
+                kate: '#005b82',
             },
         },
     },

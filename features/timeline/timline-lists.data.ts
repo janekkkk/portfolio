@@ -1,6 +1,18 @@
 import { BriefcaseIcon, CodeIcon, GlobeIcon, OfficeBuildingIcon, UserIcon } from '@heroicons/react/solid';
 import { TimelineItemModel } from '@/features/timeline/timeline-item.model';
 
+export const timeline2022: TimelineItemModel[] = [
+    {
+        content: 'Started a new job with',
+        target: 'Kate Innovations',
+        postfix: 'as a frontend lead',
+        href: 'https://kateinnovations.com/',
+        date: 'January',
+        icon: BriefcaseIcon,
+        iconBackground: 'bg-kate',
+    },
+];
+
 export const timeline2021: TimelineItemModel[] = [
     {
         content: 'Started building this',
