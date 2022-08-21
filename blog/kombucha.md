@@ -1,0 +1,93 @@
+---
+
+title: 'Kombucha recipe'
+
+metaTitle: 'Kombucha recipe'
+
+metaDesc: 'How to make Kombucha by yourself!'
+
+socialImage: images/klara-avsenik-5cFqO92t7pM-unsplash.jpg
+
+date: '2022-08-22'
+
+readingTime: 5 min
+
+tags:
+
+- kombucha
+- fermenting
+
+---
+
+Kombucha is a fermented drink made from tea which has become very popular over the last few years. It is has a funky taste in the best sense of the word. You could compare it with cider or wine without alcohol but with a tart edge. A lot of people give it a lot of health benefits but even if those are false, it's still very tasty and fun to experiment with drink.
+
+## Equipment
+For basically all equipment that touches the kombucha make sure it's stainless steel or glass that's clean and without soap rests. We only want the good bacteria to grow! You can cook it in hot water or clean it properly with soap.
+
+- Saucepan
+- Spoon
+- Sieve
+- Straw
+- Funnel
+- Preservation jar/mason jar or something similar
+- Litre bottle
+- Cheese cloth or something similar like an old t-shirt
+- Elastic, rubber band or you could also use a hair strap
+
+## The recipe
+This is why you're here! If you have any feedback or questions, just holler!
+
+### Ingredients (for 1 litre)
+- 1l of (tap) water
+- 6g of loose tea (experiment! I like green tea with jasmine at the moment)
+- 75g of sugar (no sweeteners like stevia or aspartame), I prefer organic cane sugar but at long as it's sugar it does not matter much
+- 1 [SCOBY](https://www.youbrewkombucha.com/what-is-a-scoby#:~:text=A%20SCOBY%20is%20a%20cellulose,through%20which%20kombucha%20replicates%20itself.) aka the kombucha mother/starter, get one from a friend, or grow from it from kombucha. If you're in the Netherlands near Nijmegen, send me an email. I'll hook you up.
+- 150ml leftover kombucha or a sip of vinegar
+
+### Preparation
+Do this the night before or a few hours before you start the fermentation proces. If you don't wait  for room temperature, you will kill the microorganisms and that's what it is all about.
+
+1. Cook the water
+2. Add sugar and tea, stir until the sugar is dissolved
+3. Let it cool down to at least 45 degrees celsius
+
+### Fermentation
+This proces can take between about a day and two weeks. The hotter it is, the faster the fermentation proces will go. Taste using your straw.
+
+1. Add the leftover kombucha (or a sip of vinegar) to your pan of cooled down tea
+2. Transfer the contents of the pan to your jar while filtering out the tea using the sieve
+3. Add your SCOBY to the jar
+4. Cover the jar with the cloth and and keep in place with the rubber band
+
+### Harvesting
+1. Take a sip using the straw. Not sour enough? Keep it in. Too sour? Try again or use as vinegar. When it's perfect continue to step two
+2. Transfer the kombucha from the jar to the bottle
+3. Cool for a day and start drinking it or start the second fermentation proces
+
+### Second fermentation (optional)
+This is where you add fizziness and other flavours. This proces can take up to a week. Taste with your straw.
+
+1. Add flavours (optional)
+2. Leave the bottle at room temperature until you like the flavour
+3. Because it's in a closed bottle and carbon dioxide starts to form, you need to let some air out or else your bottle will explode
+4. Cool for a day and enjoy your drink!
+
+### Afterwards
+When the fermentation proces is done the SCOBY will have grown another SCOBY to itself! Cute.  This is nice because now you either have spare or you can give the SCOBY away to a curious friend.
+
+### Cleaning and separating
+
+1. Clean your hands!
+2. Put your SCOBY on a clean plate
+3. Clean your SCOBY using cold water, the bottom of it probably has some tea residu.
+4. Try to separate the SCOBY's
+5. Add your SCOBY back in the kombucha or make a new batch
+
+### Saving your SCOBY
+Saving your SCOBY in the fridge can keep up to two months.
+
+1. Put the SCOBY in a jar with water and a cloth on top
+2. Cool the jar in the fridge, this will slow down the fermentation proces
+
+### Tips
+- Note what date you started fermenting for each batch 
