@@ -29,7 +29,7 @@ export const AboutMe = ({ className = '' }): JSX.Element => {
                         strings: [
                             'Frontend developer 👨‍💻',
                             'Tree planter 🌱🌳',
-                            'Dutchie 🇳🇱 and European 🇪🇺',
+                            'Dutch 🇳🇱 European 🇪🇺',
                             'Avid hiker and runner 🏃‍💨',
                             'Tinkerer 🪛‍💻',
                             'Lover of peanut butter 🥜',
@@ -39,7 +39,7 @@ export const AboutMe = ({ className = '' }): JSX.Element => {
                             'Permaculture gardener 🌱',
                             'DJ  🎶',
                             'Fermenter 🍺',
-                            'Cook 🍔',
+                            'Cook 🥗🥘🍲',
                             'Petter of cats 🐱',
                             'Software engineer 👨‍💻',
                             'Music lover 🎵',

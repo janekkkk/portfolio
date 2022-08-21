@@ -4,6 +4,7 @@ const defaultTheme = require('tailwindcss/defaultTheme');
 module.exports = {
     mode: 'jit',
     content: ['./pages/**/*.{js,ts,jsx,tsx}', './shared/**/*.{js,ts,jsx,tsx}', './features/**/*.{js,ts,jsx,tsx}'],
+    plugins: [require('@tailwindcss/typography')],
     theme: {
         extend: {
             fontFamily: {

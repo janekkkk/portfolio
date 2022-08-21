@@ -4,7 +4,7 @@ import { useRouter } from 'next/router';
 import { NextSeo } from 'next-seo';
 import { addCommentInSource, defaultLayoutMetaData, getDefaultPageURL } from '@/core/layout/layout.service';
 
-export const DefaultLayout = ({ children }): JSX.Element => {
+export const BlogLayout = ({ children }): JSX.Element => {
     const pathName = useRouter().pathname;
     const pageURL = getDefaultPageURL(pathName);
 
@@ -60,7 +60,9 @@ export const DefaultLayout = ({ children }): JSX.Element => {
 
             <div className="flex flex-col justify-center items-start max-w-4xl mx-auto min-h-screen py-2">
                 <div className="px-8">
-                    <main className="flex flex-col w-full flex-1">{children}</main>
+                    <main className="flex flex-col w-full flex-1">
+                        <article className="prose">{children}</article>
+                    </main>
 
                     <Footer />
                 </div>
