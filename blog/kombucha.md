@@ -4,7 +4,7 @@ title: 'Kombucha recipe'
 
 metaTitle: 'Kombucha recipe'
 
-metaDesc: Kombucha is a fermented drink made from tea which has become very popular over the last few years. It is has a funky taste in the best sense of the word. You could compare it with cider or wine without alcohol but with a tart edge. A lot of people give it a lot of health benefits but even if those are false, it's still a very tasty and fun to experiment with drink.
+metaDesc: Kombucha is a fermented drink made from tea which has become very popular over the last few years. It has a funky taste in the best sense of the word. You could compare it with cider or wine without alcohol but with a tart edge. A lot of health benefits have been attributed to it but even if those are false, it's still a very tasty and fun to experiment with drink.
 
 socialImage: images/klara-avsenik-5cFqO92t7pM-unsplash.jpg
 
@@ -14,12 +14,11 @@ readingTime: 5 min
 
 tags:
 
-- kombucha
 - fermenting
 
 ---
 
-Kombucha is a fermented drink made from tea which has become very popular over the last few years. It is has a funky taste in the best sense of the word. You could compare it with cider or wine without alcohol but with a tart edge. A lot of people give it a lot of health benefits but even if those are false, it's still a very tasty and fun to experiment with drink.
+Kombucha is a fermented drink made from tea which has become very popular over the last few years. It has a funky taste in the best sense of the word. You could compare it with cider or wine without alcohol but with a tart edge. A lot of health benefits have been attributed to it but even if those are false, it's still a very tasty and fun to experiment with drink.
 
 ## Equipment
 For basically all equipment that touches the kombucha make sure it's stainless steel or glass that's clean and without soap rests. We only want the good bacteria to grow! You can cook it in hot water or clean it properly with soap.
@@ -32,7 +31,7 @@ For basically all equipment that touches the kombucha make sure it's stainless s
 - Preservation jar/mason jar or something similar
 - Litre bottle
 - Cheese cloth or something similar like an old t-shirt
-- Elastic, rubber band or you could also use a hair strap
+- Elastic, rubber band, or you could also use a hair strap
 
 ## The recipe
 This is why you're here! If you have any feedback or questions, just holler!
@@ -45,27 +44,27 @@ This is why you're here! If you have any feedback or questions, just holler!
 - 150ml leftover kombucha or a sip of vinegar
 
 ### Preparation
-Do this the night before or a few hours before you start the fermentation proces. If you don't wait  for room temperature, you will kill the microorganisms and that's what it is all about.
+Do this the night before or a few hours before you start the fermentation process. If you don't wait  for room temperature, you will kill the microorganisms and that's what it is all about.
 
 1. Cook the water
 2. Add sugar and tea, stir until the sugar is dissolved
 3. Let it cool down to at least 45 degrees celsius
 
 ### Fermentation
-This proces can take between about a day and two weeks. The hotter it is, the faster the fermentation proces will go. Taste using your straw.
+This process can take between about a day and two weeks. The hotter it is, the faster the fermentation process will go. Taste using your straw.
 
 1. Add the leftover kombucha (or a sip of vinegar) to your pan of cooled down tea
 2. Transfer the contents of the pan to your jar while filtering out the tea using the sieve
 3. Add your SCOBY to the jar
-4. Cover the jar with the cloth and and keep in place with the rubber band
+4. Cover the jar with the cloth and keep in place with the rubber band
 
 ### Harvesting
 1. Take a sip using the straw. Not sour enough? Keep it in. Too sour? Try again or use as vinegar. When it's perfect continue to step two
 2. Transfer the kombucha from the jar to the bottle
-3. Cool for a day and start drinking it or start the second fermentation proces
+3. Cool for a day and start drinking it or start the second fermentation process
 
 ### Second fermentation (optional)
-This is where you add fizziness and other flavours. This proces can take up to a week. Taste with your straw.
+This is where you add fizziness and other flavours. This process can take up to a week. Taste with your straw.
 
 1. Add flavours (optional)
 2. Leave the bottle at room temperature until you like the flavour
@@ -73,21 +72,23 @@ This is where you add fizziness and other flavours. This proces can take up to a
 4. Cool for a day and enjoy your drink!
 
 ### Afterwards
-When the fermentation proces is done the SCOBY will have grown another SCOBY to itself! Cute.  This is nice because now you either have spare or you can give the SCOBY away to a curious friend.
+When the fermentation process is done the SCOBY will have grown another SCOBY to itself! Cute.  This is nice because now you either have spare or you can give the SCOBY away to a curious friend.
 
 ### Cleaning and separating
 
 1. Clean your hands!
 2. Put your SCOBY on a clean plate
-3. Clean your SCOBY using cold water, the bottom of it probably has some tea residu.
-4. Try to separate the SCOBY's
+3. Clean your SCOBY using cold water, the bottom of it probably has some tea residue
+4. Try to separate the SCOBYs
 5. Add your SCOBY back in the kombucha or make a new batch
 
 ### Saving your SCOBY
 Saving your SCOBY in the fridge can keep up to two months.
 
 1. Put the SCOBY in a jar with water and a cloth on top
-2. Cool the jar in the fridge, this will slow down the fermentation proces
+2. Cool the jar in the fridge, this will slow down the fermentation process
 
 ### Tips
 - Note what date you started fermenting for each batch 
+- For more background information on fermenting and kombucha check out [The Art of Fermentation](https://www.goodreads.com/book/show/13598307-the-art-of-fermentation) by Sandor Ellix Katz or [Noma Guide to Fermentation](https://www.goodreads.com/book/show/37590384-foundations-of-flavor?ref=nav_sb_ss_1_17) by René Redzepi and David Zilber
+
