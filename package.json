@@ -16,6 +16,7 @@
         "gray-matter": "^4.0.3",
         "jotai": "^1.8.0",
         "markdown-it": "^13.0.1",
+        "mixpanel-browser": "^2.45.0",
         "next": "latest",
         "next-seo": "^5.5.0",
         "nextjs-google-fonts": "^3.4.0",
