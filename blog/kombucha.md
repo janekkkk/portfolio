@@ -4,7 +4,7 @@ title: 'Kombucha recipe'
 
 metaTitle: 'Kombucha recipe'
 
-metaDesc: 'How to make Kombucha by yourself!'
+metaDesc: Kombucha is a fermented drink made from tea which has become very popular over the last few years. It is has a funky taste in the best sense of the word. You could compare it with cider or wine without alcohol but with a tart edge. A lot of people give it a lot of health benefits but even if those are false, it's still a very tasty and fun to experiment with drink.
 
 socialImage: images/klara-avsenik-5cFqO92t7pM-unsplash.jpg
 
@@ -19,7 +19,7 @@ tags:
 
 ---
 
-Kombucha is a fermented drink made from tea which has become very popular over the last few years. It is has a funky taste in the best sense of the word. You could compare it with cider or wine without alcohol but with a tart edge. A lot of people give it a lot of health benefits but even if those are false, it's still very tasty and fun to experiment with drink.
+Kombucha is a fermented drink made from tea which has become very popular over the last few years. It is has a funky taste in the best sense of the word. You could compare it with cider or wine without alcohol but with a tart edge. A lot of people give it a lot of health benefits but even if those are false, it's still a very tasty and fun to experiment with drink.
 
 ## Equipment
 For basically all equipment that touches the kombucha make sure it's stainless steel or glass that's clean and without soap rests. We only want the good bacteria to grow! You can cook it in hot water or clean it properly with soap.

@@ -52,7 +52,7 @@ export const Blogs = ({ className = '', posts }): JSX.Element => {
                                             <span className="sr-only">Janek Ozga</span>
                                             <img
                                                 className="h-10 w-10 rounded-full"
-                                                src="/images/janek.jpg"
+                                                src="/images/janek-cropped.jpg"
                                                 alt="Portrait photo of Janek"
                                             />
                                         </div>
