@@ -1,6 +1,5 @@
 import md from 'markdown-it';
 import { BlogLayout } from '@/core/layout/blog-layout';
-import Image from 'next/image';
 import React from 'react';
 import { blogService } from '@/features/blog/blog.service';
 
