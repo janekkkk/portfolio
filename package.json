@@ -14,7 +14,7 @@
         "classnames": "^2.3.1",
         "grapheme-splitter": "^1.0.4",
         "gray-matter": "^4.0.3",
-        "jotai": "^1.8.0",
+        "jotai": "^1.8.3",
         "markdown-it": "^13.0.1",
         "mixpanel-browser": "^2.45.0",
         "next": "latest",
