@@ -10,11 +10,13 @@ import { useCoreState } from '@/core/useCoreState.hook';
 export const DefaultLayout = ({ children }): JSX.Element => {
     const pathName = useRouter().pathname;
     const pageURL = getDefaultPageURL(pathName);
-    const { setIsAppInitialized } = useCoreState();
+    const { isAppInitialized, setIsAppInitialized } = useCoreState();
 
     useEffectOnce(() => {
-        addCommentInSource();
-        setIsAppInitialized(true);
+        if (!isAppInitialized) {
+            addCommentInSource();
+            setIsAppInitialized(true);
+        }
     });
 
     return (

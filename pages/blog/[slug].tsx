@@ -2,7 +2,7 @@ import md from 'markdown-it';
 import { BlogLayout } from '@/core/layout/blog-layout';
 import React, { useEffect, useState } from 'react';
 import { blogService } from '@/features/blog/blog.service';
-import { motion } from 'framer-motion';
+import { PageTransition } from '@/features/animations/PageTransition';
 
 export const getStaticPaths = (): { paths: { params: { slug: string } }[]; fallback: boolean } => {
     return {
@@ -31,7 +31,7 @@ export default ({ frontmatter, content }): JSX.Element => {
 
     if (mounted) {
         return (
-            <motion.div initial={{ x: -4000 }} animate={{ x: 0 }} exit={{ x: -4000 }}>
+            <PageTransition>
                 <BlogLayout>
                     <div className="mx-auto">
                         <h1>{frontmatter.title}</h1>
@@ -43,7 +43,7 @@ export default ({ frontmatter, content }): JSX.Element => {
                         <div dangerouslySetInnerHTML={{ __html: md().render(content) }} />
                     </div>
                 </BlogLayout>
-            </motion.div>
+            </PageTransition>
         );
     }
     return null;

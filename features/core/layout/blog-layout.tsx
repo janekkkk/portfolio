@@ -5,14 +5,19 @@ import { addCommentInSource, defaultLayoutMetaData, getDefaultPageURL } from '@/
 import { AiOutlineRollback } from 'react-icons/ai';
 import { Footer } from '@/core/footer.component';
 import { useEffectOnce } from 'usehooks-ts';
+import { useCoreState } from '@/core/useCoreState.hook';
 
 export const BlogLayout = ({ children }): JSX.Element => {
     const router = useRouter();
     const pathName = router.pathname;
     const pageURL = getDefaultPageURL(pathName);
+    const { isAppInitialized, setIsAppInitialized } = useCoreState();
 
     useEffectOnce(() => {
-        addCommentInSource();
+        if (!isAppInitialized) {
+            addCommentInSource();
+            setIsAppInitialized(true);
+        }
     });
 
     return (
