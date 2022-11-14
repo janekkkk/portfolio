@@ -1,17 +1,21 @@
 import { Footer } from '@/core/footer.component';
-import React, { useEffect } from 'react';
+import React from 'react';
 import { useRouter } from 'next/router';
 import { NextSeo } from 'next-seo';
 import { addCommentInSource, defaultLayoutMetaData, getDefaultPageURL } from '@/core/layout/layout.service';
+import { useEffectOnce, useIsMounted } from 'usehooks-ts';
+import { motion } from 'framer-motion';
+import { useCoreState } from '@/core/useCoreState.hook';
 
 export const DefaultLayout = ({ children }): JSX.Element => {
     const pathName = useRouter().pathname;
     const pageURL = getDefaultPageURL(pathName);
+    const { setIsAppInitialized } = useCoreState();
 
-    useEffect(() => {
-        // eslint-disable-next-line @typescript-eslint/no-use-before-define
+    useEffectOnce(() => {
         addCommentInSource();
-    }, []);
+        setIsAppInitialized(true);
+    });
 
     return (
         <>

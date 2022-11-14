@@ -62,3 +62,7 @@ The people from Fontsource explain self hosting really well:
 - Fonts remain **version locked**. Google often pushes updates to their fonts [without notice](https://github.com/google/fonts/issues/1307), which may interfere with your live production projects. Manage your fonts like any other NPM dependency.
 - Commit to **privacy**. Google does track the usage of their fonts and for those who are extremely privacy concerned, self-hosting is an alternative.
 - Your **fonts load offline**. On top of benefiting PWAs, often there may be situations, like working in an airplane or train, leaving you stranded without access to your online hosted fonts. Have the ability to keep working under any circumstance.
+
+## Icons
+As an extra tip! In the same style as Fontsource (monorepo open source assets), there's also a similar solution for icons called [react-icons](https://react-icons.github.io/react-icons/) which is worth checking out.
+Vue developers can check out [oh-vue-icons](https://oh-vue-icons.js.org/), Svelte devs can use [svelte-icons-pack](https://github.com/leshak/svelte-icons-pack) but I haven't found any solution for Angular yet. [Let me know](mailto:iam@janekozga.nl) if you find anything. Cheers.
