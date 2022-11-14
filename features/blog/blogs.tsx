@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import LinesEllipsis from 'react-lines-ellipsis';
 import Link from 'next/link';
+import { NoScrollLink } from '@/shared/components/NoScrollLink';
 
 export const Blogs = ({ className = '', posts }): JSX.Element => {
     const [mounted, setMounted] = useState(false);
@@ -14,7 +15,7 @@ export const Blogs = ({ className = '', posts }): JSX.Element => {
                 <div className="mt-6 max-w-lg mx-auto grid gap-5 md:grid-cols-2 lg:grid-cols-3 lg:max-w-none">
                     {posts.map(({ slug, frontmatter }) => (
                         <div key={slug} className="flex flex-col rounded-lg shadow-lg overflow-hidden cursor-pointer">
-                            <Link href={`/blog/${slug}`} as={`/blog/${slug}`}>
+                            <NoScrollLink href={`/blog/${slug}`} as={`/blog/${slug}`}>
                                 <div>
                                     <div className="flex-shrink-0">
                                         <img
@@ -73,7 +74,7 @@ export const Blogs = ({ className = '', posts }): JSX.Element => {
                                         </div>
                                     </div>
                                 </div>
-                            </Link>
+                            </NoScrollLink>
                         </div>
                     ))}
                 </div>

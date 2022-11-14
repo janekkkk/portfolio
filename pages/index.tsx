@@ -6,8 +6,7 @@ import { Timeline } from '@/features/timeline/timeline.component';
 import { Contact } from '@/features/contact/contact.component';
 import { blogService } from '@/features/blog/blog.service';
 import { Blogs } from '@/features/blog/blogs';
-import { motion } from 'framer-motion';
-import { useCoreState } from '@/core/useCoreState.hook';
+import { PageTransition } from '@/features/animations/PageTransition';
 
 export const getStaticProps = () => {
     const posts = blogService.getBlogs();
@@ -20,13 +19,8 @@ export const getStaticProps = () => {
 };
 
 export const Index = ({ posts }): JSX.Element => {
-    const { isAppInitialized } = useCoreState();
-
     return (
-        <motion.div
-            initial={{ x: isAppInitialized ? 4000 : 0 }}
-            animate={{ x: 0 }}
-            exit={{ x: isAppInitialized ? 4000 : 0 }}>
+        <PageTransition>
             <DefaultLayout>
                 <div>
                     <AboutMe className="mt-8 md:mt-12 mb-0" />
@@ -44,7 +38,7 @@ export const Index = ({ posts }): JSX.Element => {
                     <Posts className="mt-12 md:mt-14" />
                 </div>
             </DefaultLayout>
-        </motion.div>
+        </PageTransition>
     );
 };
 
