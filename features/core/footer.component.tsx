@@ -1,6 +1,7 @@
 import React from 'react';
 import { CurrentlyPlaying } from '@/features/currently-playing/currently-playing.component';
 
+// ToDo replace SVG icons with react-icons.
 const navigation = [
     {
         name: 'LinkedIn',

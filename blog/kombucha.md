@@ -40,7 +40,7 @@ This is why you're here! If you have any feedback or questions, just holler!
 - 1l of (tap) water
 - 6g of loose tea (experiment! I like green tea with jasmine at the moment)
 - 75g of sugar (no sweeteners like stevia or aspartame), I prefer organic cane sugar but at long as it's sugar it does not matter much
-- 1 [SCOBY](https://www.youbrewkombucha.com/what-is-a-scoby#:~:text=A%20SCOBY%20is%20a%20cellulose,through%20which%20kombucha%20replicates%20itself.) aka the kombucha mother/starter, get one from a friend, or grow from it from kombucha. If you're in the Netherlands near Nijmegen, send me an email. I'll hook you up.
+- 1 [SCOBY](https://www.youbrewkombucha.com/what-is-a-scoby#:~:text=A%20SCOBY%20is%20a%20cellulose,through%20which%20kombucha%20replicates%20itself.) aka the kombucha mother/starter, get one from a friend, or grow from it from kombucha. If you're in the Netherlands near Nijmegen, [send me an email](mailto:iam@janekozga.nl). I'll hook you up.
 - 150ml leftover kombucha or a sip of vinegar
 
 ### Preparation

@@ -1,17 +1,19 @@
-import { Footer } from '@/core/footer.component';
-import React, { useEffect } from 'react';
+import React from 'react';
 import { useRouter } from 'next/router';
 import { NextSeo } from 'next-seo';
 import { addCommentInSource, defaultLayoutMetaData, getDefaultPageURL } from '@/core/layout/layout.service';
+import { AiOutlineRollback } from 'react-icons/ai';
+import { Footer } from '@/core/footer.component';
+import { useEffectOnce } from 'usehooks-ts';
 
 export const BlogLayout = ({ children }): JSX.Element => {
-    const pathName = useRouter().pathname;
+    const router = useRouter();
+    const pathName = router.pathname;
     const pageURL = getDefaultPageURL(pathName);
 
-    useEffect(() => {
-        // eslint-disable-next-line @typescript-eslint/no-use-before-define
+    useEffectOnce(() => {
         addCommentInSource();
-    }, []);
+    });
 
     return (
         <>
@@ -59,6 +61,13 @@ export const BlogLayout = ({ children }): JSX.Element => {
             />
 
             <div className="flex flex-col justify-center items-start max-w-4xl mx-auto min-h-screen py-2">
+                <header className="px-8 mb-6">
+                    <button type="button" onClick={() => router.back()} className="flex items-center text-xl">
+                        <AiOutlineRollback />
+                        <span className="ml-2">Go back</span>
+                    </button>
+                </header>
+
                 <div className="px-8">
                     <main className="flex flex-col w-full flex-1">
                         <article className="prose">{children}</article>

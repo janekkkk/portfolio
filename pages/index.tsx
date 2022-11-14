@@ -6,8 +6,9 @@ import { Timeline } from '@/features/timeline/timeline.component';
 import { Contact } from '@/features/contact/contact.component';
 import { blogService } from '@/features/blog/blog.service';
 import { Blogs } from '@/features/blog/blogs';
+import { motion } from 'framer-motion';
+import { useCoreState } from '@/core/useCoreState.hook';
 
-// eslint-disable-next-line @typescript-eslint/explicit-function-return-type
 export const getStaticProps = () => {
     const posts = blogService.getBlogs();
 
@@ -19,24 +20,31 @@ export const getStaticProps = () => {
 };
 
 export const Index = ({ posts }): JSX.Element => {
+    const { isAppInitialized } = useCoreState();
+
     return (
-        <DefaultLayout>
-            <div>
-                <AboutMe className="mt-8 md:mt-12 mb-0" />
-            </div>
-            <div>
-                <Contact className="mt-8 md:mt-12 mb-0" />
-            </div>
-            <div>
-                <Timeline className="mt-8 md:mt-12 mb-0" />
-            </div>
-            <div>
-                <Blogs className="mt-8 md:mt-12 mb-0" posts={Array.from(posts)} />
-            </div>
-            <div>
-                <Posts className="mt-12 md:mt-14" />
-            </div>
-        </DefaultLayout>
+        <motion.div
+            initial={{ x: isAppInitialized ? 4000 : 0 }}
+            animate={{ x: 0 }}
+            exit={{ x: isAppInitialized ? 4000 : 0 }}>
+            <DefaultLayout>
+                <div>
+                    <AboutMe className="mt-8 md:mt-12 mb-0" />
+                </div>
+                <div>
+                    <Contact className="mt-8 md:mt-12 mb-0" />
+                </div>
+                <div>
+                    <Timeline className="mt-8 md:mt-12 mb-0" />
+                </div>
+                <div>
+                    <Blogs className="mt-8 md:mt-12 mb-0" posts={Array.from(posts)} />
+                </div>
+                <div>
+                    <Posts className="mt-12 md:mt-14" />
+                </div>
+            </DefaultLayout>
+        </motion.div>
     );
 };
 

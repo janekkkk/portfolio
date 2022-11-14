@@ -10,7 +10,7 @@ export const Posts = ({ className = '' }): JSX.Element => (
             {posts.map((post) => (
                 <div key={post.title} className="flex flex-col rounded-lg shadow-lg overflow-hidden">
                     <div className="flex-shrink-0">
-                        <img className="h-48 w-full object-cover" src={post.imageUrl} alt="" />
+                        <img loading="lazy" className="h-48 w-full object-cover" src={post.imageUrl} alt="" />
                     </div>
                     <div className="flex-1 bg-white p-6 flex flex-col justify-between">
                         <div className="flex-1">
@@ -43,6 +43,7 @@ export const Posts = ({ className = '' }): JSX.Element => (
                                 <a href={post.author.href}>
                                     <span className="sr-only">{post.author.name}</span>
                                     <img
+                                        loading="lazy"
                                         className="h-10 w-10 rounded-full"
                                         src={post.author.imageUrl}
                                         alt="Portrait photo of Janek"
