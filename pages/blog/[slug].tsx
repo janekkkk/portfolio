@@ -2,7 +2,7 @@ import md from 'markdown-it';
 import { BlogLayout } from '@/core/layout/blog-layout';
 import React, { useEffect, useState } from 'react';
 import { blogService } from '@/features/blog/blog.service';
-import { PageTransition } from '@/features/animations/PageTransition';
+import { PageTransition } from '@/shared/components/animations/PageTransition';
 
 export const getStaticPaths = (): { paths: { params: { slug: string } }[]; fallback: boolean } => {
     return {

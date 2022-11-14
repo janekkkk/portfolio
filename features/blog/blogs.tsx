@@ -15,7 +15,7 @@ export const Blogs = ({ className = '', posts }): JSX.Element => {
                 <div className="mt-6 max-w-lg mx-auto grid gap-5 md:grid-cols-2 lg:grid-cols-3 lg:max-w-none">
                     {posts.map(({ slug, frontmatter }) => (
                         <div key={slug} className="flex flex-col rounded-lg shadow-lg overflow-hidden cursor-pointer">
-                            <NoScrollLink href={`/blog/${slug}`} as={`/blog/${slug}`}>
+                            <Link href={`/blog/${slug}`} as={`/blog/${slug}`}>
                                 <div>
                                     <div className="flex-shrink-0">
                                         <img
@@ -74,7 +74,7 @@ export const Blogs = ({ className = '', posts }): JSX.Element => {
                                         </div>
                                     </div>
                                 </div>
-                            </NoScrollLink>
+                            </Link>
                         </div>
                     ))}
                 </div>
