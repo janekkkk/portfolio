@@ -6,7 +6,7 @@ import { Timeline } from '@/features/timeline/timeline.component';
 import { Contact } from '@/features/contact/contact.component';
 import { blogService } from '@/features/blog/blog.service';
 import { Blogs } from '@/features/blog/blogs';
-import { PageTransition } from '@/features/animations/PageTransition';
+import { PageTransition } from '@/shared/components/animations/PageTransition';
 
 export const getStaticProps = () => {
     const posts = blogService.getBlogs();
