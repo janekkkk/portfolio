@@ -17,7 +17,7 @@
         "framer-motion": "7.6.6",
         "grapheme-splitter": "1.0.4",
         "gray-matter": "4.0.3",
-        "jotai": "1.10.0",
+        "jotai": "1.12.1",
         "markdown-it": "13.0.1",
         "next": "13.0.3",
         "next-seo": "5.14.1",
