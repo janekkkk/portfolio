@@ -42,9 +42,10 @@ This is why you're here! If you have any feedback or questions, just holler!
 2. Put all the ingredients in the pan 
 3. Put pan on stove and heat while stirring to about 40 degrees Celsius
 4. Move the pan from the stove to the oven (or another warm place)
-5. Wait for about 10 hours
-6. Add the yoghurt to a jar (I like like to reuse glass apple juice jars)
-7. That's it! Enjoy!
+5. Turn off the oven
+6. Wait for about 10 hours
+7. Add the yoghurt to a jar (I like like to reuse glass apple juice jars)
+8. That's it! Enjoy!
 
 ### Tips
 - With the yoghurt you just made you can make a new batch in a few days! 
