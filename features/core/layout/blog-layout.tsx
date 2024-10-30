@@ -4,8 +4,8 @@ import { NextSeo } from 'next-seo';
 import { addCommentInSource, defaultLayoutMetaData, getDefaultPageURL } from '@/core/layout/layout.service';
 import { AiOutlineRollback } from 'react-icons/ai';
 import { Footer } from '@/core/footer.component';
-import { useEffectOnce } from 'usehooks-ts';
 import { useCoreState } from '@/core/useCoreState.hook';
+import { useMount } from 'react-use';
 
 export const BlogLayout = ({ children }): JSX.Element => {
     const router = useRouter();
@@ -13,7 +13,7 @@ export const BlogLayout = ({ children }): JSX.Element => {
     const pageURL = getDefaultPageURL(pathName);
     const { isAppInitialized, setIsAppInitialized } = useCoreState();
 
-    useEffectOnce(() => {
+    useMount(() => {
         if (!isAppInitialized) {
             addCommentInSource();
             setIsAppInitialized(true);
