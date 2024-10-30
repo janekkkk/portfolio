@@ -3,16 +3,16 @@ import React from 'react';
 import { useRouter } from 'next/router';
 import { NextSeo } from 'next-seo';
 import { addCommentInSource, defaultLayoutMetaData, getDefaultPageURL } from '@/core/layout/layout.service';
-import { useEffectOnce, useIsMounted } from 'usehooks-ts';
 import { motion } from 'framer-motion';
 import { useCoreState } from '@/core/useCoreState.hook';
+import { useMount } from 'react-use';
 
 export const DefaultLayout = ({ children }): JSX.Element => {
     const pathName = useRouter().pathname;
     const pageURL = getDefaultPageURL(pathName);
     const { isAppInitialized, setIsAppInitialized } = useCoreState();
 
-    useEffectOnce(() => {
+    useMount(() => {
         if (!isAppInitialized) {
             addCommentInSource();
             setIsAppInitialized(true);

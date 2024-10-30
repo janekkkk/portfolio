@@ -1,4 +1,4 @@
-import { BriefcaseIcon, CodeIcon, GlobeIcon, OfficeBuildingIcon, UserIcon } from '@heroicons/react/solid';
+import { BriefcaseIcon, CodeBracketIcon, GlobeEuropeAfricaIcon, BuildingOfficeIcon, UserIcon } from '@heroicons/react/24/solid';
 import { TimelineItemModel } from '@/features/timeline/timeline-item.model';
 
 export const timeline2022: TimelineItemModel[] = [
@@ -19,7 +19,7 @@ export const timeline2021: TimelineItemModel[] = [
         target: 'portfolio',
         href: 'https://github.com/janekkkk/portfolio',
         date: 'August',
-        icon: CodeIcon,
+        icon: CodeBracketIcon,
         iconBackground: 'bg-blue-500',
     },
     {
@@ -38,7 +38,7 @@ export const timeline2020: TimelineItemModel[] = [
         content: 'Started learning',
         target: 'React',
         date: 'December',
-        icon: CodeIcon,
+        icon: CodeBracketIcon,
         iconBackground: 'bg-blue-500',
     },
     {
@@ -96,7 +96,7 @@ export const timeline2018: TimelineItemModel[] = [
         target: 'Browsy',
         href: 'https://www.browsy.nl/',
         date: 'September',
-        icon: GlobeIcon,
+        icon: GlobeEuropeAfricaIcon,
         iconBackground: 'bg-green-500',
     },
     {
@@ -130,7 +130,7 @@ export const timeline2018: TimelineItemModel[] = [
         target: 'HAN University of Applied Sciences',
         href: 'https://www.han.nl/',
         date: 'May',
-        icon: OfficeBuildingIcon,
+        icon: BuildingOfficeIcon,
         iconBackground: 'bg-han',
     },
 ];
