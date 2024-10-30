@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { ReactNode } from 'react';
 
 export interface TimelineItemModel {
     content: string;
@@ -6,7 +6,7 @@ export interface TimelineItemModel {
     target: string;
     href?: string;
     date: string;
-    icon: (props: React.SVGProps<SVGSVGElement>) => JSX.Element;
+    icon: (props: React.SVGProps<SVGSVGElement>) => ReactNode;
     iconBackground: string; // tailwind class
     emoji?: string;
 }
