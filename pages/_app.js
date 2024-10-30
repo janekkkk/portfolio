@@ -8,7 +8,6 @@ export const isProd = process.env.NODE_ENV === 'production';
 
 const queryClient = new QueryClient();
 
-// eslint-disable-next-line @typescript-eslint/explicit-function-return-type
 const MyApp = ({ Component, pageProps }) => {
     return (
         <AnimatePresence onExitComplete={() => window.scrollTo(0, 0)}>
