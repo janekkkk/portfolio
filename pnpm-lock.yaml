@@ -76,9 +76,6 @@ devDependencies:
   '@tailwindcss/typography':
     specifier: 0.5.15
     version: 0.5.15(tailwindcss@3.4.14)
-  '@types/classnames':
-    specifier: 2.3.4
-    version: 2.3.4
   '@types/react':
     specifier: 18.3.12
     version: 18.3.12
@@ -102,7 +99,7 @@ devDependencies:
     version: 9.1.0(eslint@9.13.0)
   eslint-config-standard:
     specifier: 17.1.0
-    version: 17.1.0(eslint-plugin-import@2.31.0)(eslint-plugin-n@16.6.2)(eslint-plugin-promise@7.1.0)(eslint@9.13.0)
+    version: 17.1.0(eslint-plugin-import@2.31.0)(eslint-plugin-n@15.7.0)(eslint-plugin-promise@7.1.0)(eslint@9.13.0)
   eslint-config-standard-jsx:
     specifier: 11.0.0
     version: 11.0.0(eslint-plugin-react@7.37.2)(eslint@9.13.0)
@@ -1742,13 +1739,6 @@ packages:
       '@babel/types': 7.26.0
     dev: true
 
-  /@types/classnames@2.3.4:
-    resolution: {integrity: sha512-dwmfrMMQb9ujX1uYGvB5ERDlOzBNywnZAZBtOe107/hORWP05ESgU4QyaanZMWYYfd2BzrG78y13/Bju8IQcMQ==}
-    deprecated: This is a stub types definition. classnames provides its own type definitions, so you do not need this installed.
-    dependencies:
-      classnames: 2.5.1
-    dev: true
-
   /@types/conventional-commits-parser@5.0.0:
     resolution: {integrity: sha512-loB369iXNmAZglwWATL+WRe+CRMmmBPtpolYzIebFaX4YA3x+BEfLqhUAV9WanycKI3TG1IMr5bMJDajDKLlUQ==}
     dependencies:
@@ -2464,11 +2454,6 @@ packages:
     resolution: {integrity: sha512-E+XQCRwSbaaiChtv6k6Dwgc+bx+Bs6vuKJHHl5kox/BaKbhiXzqQOwK4cO22yElGp2OCmjwVhT3HmxgyPGnJfQ==}
     dev: true
 
-  /builtin-modules@3.3.0:
-    resolution: {integrity: sha512-zhaCDicdLuWN5UbN5IMnFqNMhNfo919sH85y2/ea+5Yg9TsTkeZxpL+JLbp6cgYFS4sRLp3YV4S6yDuqVWHYOw==}
-    engines: {node: '>=6'}
-    dev: true
-
   /builtins@5.1.0:
     resolution: {integrity: sha512-SW9lzGTLvWTP1AY8xeAMZimqDrIaSdLQUcVr9DMef51niJ022Ri87SwRRKYm4A6iHfkPaiVUu/Duw2Wc4J7kKg==}
     dependencies:
@@ -2567,6 +2552,7 @@ packages:
 
   /classnames@2.5.1:
     resolution: {integrity: sha512-saHYOzhIQs6wy2sVxTM6bUDsQO4F50V9RQ22qBpEdCW+I+/Wmke2HOl6lS6dTpdxVhb88/I6+Hs+438c3lfUow==}
+    dev: false
 
   /client-only@0.0.1:
     resolution: {integrity: sha512-IV3Ou0jSMzZrd3pZ48nLkT9DA7Ag1pnPzaiQhpW7c3RbcqqzvzzVu+L8gfqMp/8IM2MQtSiqaCxrrcfu8I8rMA==}
@@ -3098,16 +3084,6 @@ packages:
     engines: {node: '>=10'}
     dev: true
 
-  /eslint-compat-utils@0.5.1(eslint@9.13.0):
-    resolution: {integrity: sha512-3z3vFexKIEnjHE3zCMRo6fn/e44U7T1khUjg+Hp0ZQMCigh28rALD0nPFBcGZuiLC5rLZa2ubQHDRln09JfU2Q==}
-    engines: {node: '>=12'}
-    peerDependencies:
-      eslint: '>=6.0.0'
-    dependencies:
-      eslint: 9.13.0
-      semver: 7.6.3
-    dev: true
-
   /eslint-config-next@15.0.2(eslint@9.13.0)(typescript@5.6.3):
     resolution: {integrity: sha512-N8o6cyUXzlMmQbdc2Kc83g1qomFi3ITqrAZfubipVKET2uR2mCStyGRcx/r8WiAIVMul2KfwRiCHBkTpBvGBmA==}
     peerDependencies:
@@ -3226,7 +3202,7 @@ packages:
       eslint-plugin-promise: 6.1.1(eslint@8.57.1)
     dev: true
 
-  /eslint-config-standard@17.1.0(eslint-plugin-import@2.31.0)(eslint-plugin-n@16.6.2)(eslint-plugin-promise@7.1.0)(eslint@9.13.0):
+  /eslint-config-standard@17.1.0(eslint-plugin-import@2.31.0)(eslint-plugin-n@15.7.0)(eslint-plugin-promise@7.1.0)(eslint@9.13.0):
     resolution: {integrity: sha512-IwHwmaBNtDK4zDHQukFDW5u/aTb8+meQWZvNFWkiGmbWjD6bqyuSSBxxXKkCftCUzc1zwCH2m/baCNDLGmuO5Q==}
     engines: {node: '>=12.0.0'}
     peerDependencies:
@@ -3237,7 +3213,7 @@ packages:
     dependencies:
       eslint: 9.13.0
       eslint-plugin-import: 2.31.0(@typescript-eslint/parser@8.12.2)(eslint@9.13.0)
-      eslint-plugin-n: 16.6.2(eslint@9.13.0)
+      eslint-plugin-n: 15.7.0(eslint@9.13.0)
       eslint-plugin-promise: 7.1.0(eslint@9.13.0)
     dev: true
 
@@ -3398,18 +3374,6 @@ packages:
       - supports-color
     dev: true
 
-  /eslint-plugin-es-x@7.8.0(eslint@9.13.0):
-    resolution: {integrity: sha512-7Ds8+wAAoV3T+LAKeu39Y5BzXCrGKrcISfgKEqTS4BDN8SFEDQd0S43jiQ8vIa3wUKD07qitZdfzlenSi8/0qQ==}
-    engines: {node: ^14.18.0 || >=16.0.0}
-    peerDependencies:
-      eslint: '>=8'
-    dependencies:
-      '@eslint-community/eslint-utils': 4.4.1(eslint@9.13.0)
-      '@eslint-community/regexpp': 4.12.1
-      eslint: 9.13.0
-      eslint-compat-utils: 0.5.1(eslint@9.13.0)
-    dev: true
-
   /eslint-plugin-es@3.0.1(eslint@9.13.0):
     resolution: {integrity: sha512-GUmAsJaN4Fc7Gbtl8uOBlayo2DqhwWvEzykMHSCZHU3XdJ+NSzzZcVhXh3VxX5icqQ+oQdIEawXX8xkR3mIFmQ==}
     engines: {node: '>=8.10.0'}
@@ -3439,6 +3403,17 @@ packages:
       eslint: '>=4.19.1'
     dependencies:
       eslint: 8.57.1
+      eslint-utils: 2.1.0
+      regexpp: 3.2.0
+    dev: true
+
+  /eslint-plugin-es@4.1.0(eslint@9.13.0):
+    resolution: {integrity: sha512-GILhQTnjYE2WorX5Jyi5i4dz5ALWxBIdQECVQavL6s7cI76IZTDWleTHkxz/QT3kvcs2QlGHvKLYsSlPOlPXnQ==}
+    engines: {node: '>=8.10.0'}
+    peerDependencies:
+      eslint: '>=4.19.1'
+    dependencies:
+      eslint: 9.13.0
       eslint-utils: 2.1.0
       regexpp: 3.2.0
     dev: true
@@ -3671,20 +3646,17 @@ packages:
       semver: 7.6.3
     dev: true
 
-  /eslint-plugin-n@16.6.2(eslint@9.13.0):
-    resolution: {integrity: sha512-6TyDmZ1HXoFQXnhCTUjVFULReoBPOAjpuiKELMkeP40yffI/1ZRO+d9ug/VC6fqISo2WkuIBk3cvuRPALaWlOQ==}
-    engines: {node: '>=16.0.0'}
+  /eslint-plugin-n@15.7.0(eslint@9.13.0):
+    resolution: {integrity: sha512-jDex9s7D/Qial8AGVIHq4W7NswpUD5DPDL2RH8Lzd9EloWUuvUkHfv4FRLMipH5q2UtyurorBkPeNi1wVWNh3Q==}
+    engines: {node: '>=12.22.0'}
     peerDependencies:
       eslint: '>=7.0.0'
     dependencies:
-      '@eslint-community/eslint-utils': 4.4.1(eslint@9.13.0)
       builtins: 5.1.0
       eslint: 9.13.0
-      eslint-plugin-es-x: 7.8.0(eslint@9.13.0)
-      get-tsconfig: 4.8.1
-      globals: 13.24.0
+      eslint-plugin-es: 4.1.0(eslint@9.13.0)
+      eslint-utils: 3.0.0(eslint@9.13.0)
       ignore: 5.3.2
-      is-builtin-module: 3.2.1
       is-core-module: 2.15.1
       minimatch: 3.1.2
       resolve: 1.22.8
@@ -3903,6 +3875,16 @@ packages:
       eslint: '>=5'
     dependencies:
       eslint: 8.57.1
+      eslint-visitor-keys: 2.1.0
+    dev: true
+
+  /eslint-utils@3.0.0(eslint@9.13.0):
+    resolution: {integrity: sha512-uuQC43IGctw68pJA1RgbQS8/NP7rch6Cwd4j3ZBtgo4/8Flj4eGE7ZYSZRN3iq5pVUv6GPdW5Z1RFleo84uLDA==}
+    engines: {node: ^10.0.0 || ^12.0.0 || >= 14.0.0}
+    peerDependencies:
+      eslint: '>=5'
+    dependencies:
+      eslint: 9.13.0
       eslint-visitor-keys: 2.1.0
     dev: true
 
@@ -4727,13 +4709,6 @@ packages:
     dependencies:
       call-bind: 1.0.7
       has-tostringtag: 1.0.2
-    dev: true
-
-  /is-builtin-module@3.2.1:
-    resolution: {integrity: sha512-BSLE3HnV2syZ0FK0iMA/yUGplUeMmNz4AW5fnTunbCIqZi4vG3WjJT9FHMy5D69xmAYBHXQhJdALdpwVxV501A==}
-    engines: {node: '>=6'}
-    dependencies:
-      builtin-modules: 3.3.0
     dev: true
 
   /is-bun-module@1.2.1:
