@@ -25,6 +25,7 @@
         "react-dom": "18.2.0",
         "react-icons": "4.6.0",
         "react-lines-ellipsis": "0.15.3",
+        "react-use": "^17.5.1",
         "sass": "1.79.0",
         "typewriter-effect": "2.19.0",
         "usehooks-ts": "2.9.1"
