@@ -5,7 +5,7 @@
         "build": "next build",
         "export": "next export",
         "start": "next start",
-        "lint": "ESLINT_USE_FLAT_CONFIG=false next lint --fix"
+        "lint": "next lint --fix"
     },
     "dependencies": {
         "@fontsource/inter": "5.1.0",
