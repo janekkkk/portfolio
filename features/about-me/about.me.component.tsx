@@ -1,9 +1,8 @@
 import React, { useEffect, useState } from 'react';
-import { JSX } from '@babel/types';
 import GraphemeSplitter from 'grapheme-splitter';
 import Typewriter from 'typewriter-effect';
 
-export const AboutMe = ({ className = '' }): JSX.Element => {
+export const AboutMe = ({ className = '' }) => {
     const [mounted, setMounted] = useState(false);
     useEffect(() => setMounted(true), []); // at init only
 
