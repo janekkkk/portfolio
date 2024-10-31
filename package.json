@@ -5,7 +5,8 @@
         "build": "next build",
         "export": "next export",
         "start": "next start",
-        "lint": "next lint --fix"
+        "lint": "next lint --fix",
+        "preinstall": "npx only-allow pnpm"
     },
     "dependencies": {
         "@fontsource/inter": "5.1.0",

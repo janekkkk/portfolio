@@ -6,6 +6,9 @@ on:
 jobs:
     build-and-deploy:
         runs-on: ubuntu-latest
+        strategy:
+          matrix:
+            node-version: [ 20 ]
         concurrency:
             group: ${{ github.workflow }}-${{ github.ref }}
 
@@ -21,22 +24,19 @@ jobs:
             - name: Set username
               run: git config --global user.name "${{ secrets.adminname }}"
 
-            - name: Setup Node
+            - name: Setup Node ${{ matrix.node-version }}
               uses: actions/setup-node@v4
               with:
-                  node-version: '20'
+                  node-version: ${{ matrix.node-version }}
 
-            - name: Cache dependencies 💾
-              uses: actions/cache@v4
+            - name: Install pnpm
+              uses: pnpm/action-setup@v4
               with:
-                  path: ~/.npm
-                  key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
-                  restore-keys: |
-                      ${{ runner.os }}-node-
+                version: 8
 
             - name: Install and Build 🔧 # Builds app to the /out directory.
               run: |
-                  npm install --legacy-peer-deps
+                pnpm install
                   npm run build
 
             - name: Copy .nojekyll
