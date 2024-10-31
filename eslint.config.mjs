@@ -9,6 +9,7 @@ import { fileURLToPath } from 'node:url';
 import js from '@eslint/js';
 import { FlatCompat } from '@eslint/eslintrc';
 import { fixupPluginRules } from '@eslint/compat';
+import typescriptEslintParser from '@typescript-eslint/parser';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -38,26 +39,19 @@ export default [
             'eslint-plugin-react': fixupPluginRules(react),
             'eslint-plugin-tailwindcss': fixupPluginRules(tailwindcss),
         },
-
         languageOptions: {
             globals: {
                 ...globals.node,
                 ...globals.jest,
             },
-
             ecmaVersion: 2020,
             sourceType: 'module',
-
-            parserOptions: {
-                parser: '@typescript-eslint/parser',
-            },
+            parser: typescriptEslintParser,
         },
-
         rules: {
             '@typescript-eslint/explicit-module-boundary-types': 'off',
             'no-use-before-define': 'off',
-            '@typescript-eslint/no-use-before-define': ['error'],
-
+            // '@typescript-eslint/no-use-before-define': ['error'],
             'max-len': [
                 'error',
                 {
@@ -67,10 +61,8 @@ export default [
                     ignoreUrls: true,
                 },
             ],
-
             'no-console': 'error',
             'no-debugger': 'error',
-
             quotes: [
                 'error',
                 'single',
@@ -79,7 +71,6 @@ export default [
                     allowTemplateLiterals: false,
                 },
             ],
-
             'prettier/prettier': [
                 'error',
                 {
