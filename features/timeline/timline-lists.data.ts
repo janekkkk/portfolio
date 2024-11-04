@@ -1,4 +1,10 @@
-import { BriefcaseIcon, CodeBracketIcon, GlobeEuropeAfricaIcon, BuildingOfficeIcon, UserIcon } from '@heroicons/react/24/solid';
+import {
+    BriefcaseIcon,
+    CodeBracketIcon,
+    GlobeEuropeAfricaIcon,
+    BuildingOfficeIcon,
+    UserIcon,
+} from '@heroicons/react/24/solid';
 import { TimelineItemModel } from '@/features/timeline/timeline-item.model';
 
 export const timeline2022: TimelineItemModel[] = [

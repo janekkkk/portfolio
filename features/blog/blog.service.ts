@@ -1,8 +1,8 @@
 import fs from 'fs';
 import matter from 'gray-matter';
 
-export class BlogService {
-    static getPaths(): { params: { slug: string } }[] {
+class BlogService {
+    public getPaths(): { params: { slug: string } }[] {
         const files = fs.readdirSync('blog');
 
         return files.map((fileName) => ({
@@ -12,12 +12,12 @@ export class BlogService {
         }));
     }
 
-    static getContent(slug: string): matter.GrayMatterFile<string> {
+    public getContent(slug: string): matter.GrayMatterFile<string> {
         const fileName = fs.readFileSync(`blog/${slug}.md`, 'utf-8');
         return matter(fileName);
     }
 
-    static getBlogs(): { frontmatter: { [p: string]: any }; slug: string }[] {
+    public getBlogs(): { slug: string; frontmatter: { [key: string]: unknown } }[] {
         const files = fs.readdirSync('blog');
 
         return files.map((fileName) => {
@@ -33,4 +33,4 @@ export class BlogService {
     }
 }
 
-export const blogService = BlogService;
+export const blogService = new BlogService();

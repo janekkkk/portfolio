@@ -1,9 +1,20 @@
-import { atom, useAtom } from 'jotai';
+import { create } from 'zustand';
 
-const isInitializedAtom = atom(false);
+interface CoreStore {
+    isInitialized: boolean;
+    actions: {
+        setIsInitialized: () => void;
+    };
+}
 
+const useCoreStore = create<CoreStore>((set) => ({
+    isInitialized: false,
+    actions: {
+        setIsInitialized: () => set(() => ({ isInitialized: true })),
+    },
+}));
 export const useCoreState = () => {
-    const [isInitialized, setIsInitialized] = useAtom(isInitializedAtom);
+    const { isInitialized, actions } = useCoreStore((store) => store);
 
-    return { isAppInitialized: isInitialized, setIsAppInitialized: setIsInitialized };
+    return { isAppInitialized: isInitialized, setIsAppInitialized: actions.setIsInitialized } as const;
 };
