@@ -1,5 +1,3 @@
-/* eslint-disable camelcase */
-
 export interface CurrentlyPlayingSpotify {
     timestamp: number;
     context: Context;

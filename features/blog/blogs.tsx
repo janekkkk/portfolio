@@ -1,9 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import LinesEllipsis from 'react-lines-ellipsis';
 import Link from 'next/link';
-import { NoScrollLink } from '@/shared/components/NoScrollLink';
 
-export const Blogs = ({ className = '', posts }): JSX.Element => {
+export const Blogs = ({ className = '', posts }) => {
     const [mounted, setMounted] = useState(false);
     useEffect(() => setMounted(true), []); // at init only
 
