@@ -15,7 +15,7 @@ export const DefaultLayout = ({ children }): JSX.Element => {
     useMount(() => {
         if (!isAppInitialized) {
             addCommentInSource();
-            setIsAppInitialized(true);
+            setIsAppInitialized();
         }
     });
 
