@@ -1,7 +1,7 @@
 
 # My Portfolio Site
 
-Welcome to my personal portfolio site! This project showcases my work, including current and past projects, along with a blog where I share posts on various hobby topics. Built with modern technologies, it focuses on providing a clean and interactive experience.
+Welcome to my [personal portfolio](https://janekozga.nl) site! This project showcases my work, including current and past projects, along with a blog where I share posts on various hobby topics. Built with modern technologies, it focuses on providing a clean and interactive experience.
 
 ## Project Setup
 
@@ -11,8 +11,10 @@ This project is powered by [Next.js](https://nextjs.org/) and styled with [Tailw
 
 - **Project Portfolio**: Explore the projects I'm currently working on, including past highlights.
 - **Blog**: Read posts covering a range of interests, from tech topics to personal hobbies.
+- **Articles**: Read articles about my work outside of this site.
 - **Interactive UI**: Smooth animations and an accessible design using Framer Motion, Heroicons, and Headless UI components.
 - **SEO-optimized**: Implemented with Next SEO to help enhance visibility on search engines.
+- **Automatic deployment**: Deploy automatically on GitHub pages using GitHub Actions.
 
 ## Getting Started
 
@@ -37,8 +39,8 @@ npm run dev
 ### Stack
 
 - **Framework**: Next.js 15
-- **Styling**: Tailwind CSS, Sass
-- **State Management**: Jotai, React Query
+- **Styling**: Tailwind CSS, CSS, Headless UI
+- **State Management**: Zustand for frontend state, React Query for server state
 - **Markdown Parsing**: markdown-it, gray-matter
 
 ## Development Tools
@@ -47,6 +49,7 @@ npm run dev
 - **ESLint & Prettier**: For consistent coding style.
 - **Jest**: For testing.
 - **Commitlint & Husky**: For commit message linting and Git hooks.
+- **Pnpm**: For fast and reliable package management.
 
 ### Dependencies
 

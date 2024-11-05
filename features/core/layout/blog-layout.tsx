@@ -16,7 +16,7 @@ export const BlogLayout = ({ children }): JSX.Element => {
     useMount(() => {
         if (!isAppInitialized) {
             addCommentInSource();
-            setIsAppInitialized(true);
+            setIsAppInitialized();
         }
     });
 

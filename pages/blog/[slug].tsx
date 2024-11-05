@@ -3,6 +3,7 @@ import { BlogLayout } from '@/core/layout/blog-layout';
 import React, { useEffect, useState } from 'react';
 import { blogService } from '@/features/blog/blog.service';
 import { PageTransition } from '@/shared/components/animations/PageTransition';
+import Image from 'next/image';
 
 export const getStaticPaths = (): { paths: { params: { slug: string } }[]; fallback: boolean } => {
     return {
@@ -35,7 +36,10 @@ export default ({ frontmatter, content }): JSX.Element => {
                 <BlogLayout>
                     <div className="mx-auto">
                         <h1>{frontmatter.title}</h1>
-                        <img
+                        <Image
+                            width={0}
+                            height={0}
+                            loading={'lazy'}
                             className="h-48 w-full object-cover"
                             src={`/${frontmatter.socialImage}`}
                             alt={frontmatter.title}
