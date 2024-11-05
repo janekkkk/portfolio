@@ -27,7 +27,8 @@
         "react-lines-ellipsis": "0.15.4",
         "react-use": "^17.5.1",
         "sass": "1.80.6",
-        "typewriter-effect": "2.21.0"
+        "typewriter-effect": "2.21.0",
+        "zustand": "^5.0.1"
     },
     "devDependencies": {
         "@commitlint/cli": "19.5.0",
