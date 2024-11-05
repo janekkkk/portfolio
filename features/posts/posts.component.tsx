@@ -1,6 +1,7 @@
 import React from 'react';
 import { posts } from '@/features/posts/posts.data';
 import LinesEllipsis from 'react-lines-ellipsis';
+import Image from 'next/image';
 
 export const Posts = ({ className = '' }): JSX.Element => (
     <div className={`${className} block`}>
@@ -10,7 +11,14 @@ export const Posts = ({ className = '' }): JSX.Element => (
             {posts.map((post) => (
                 <div key={post.title} className="flex flex-col rounded-lg shadow-lg overflow-hidden">
                     <div className="flex-shrink-0">
-                        <img loading="lazy" className="h-48 w-full object-cover" src={post.imageUrl} alt="" />
+                        <Image
+                            loading="lazy"
+                            width="0"
+                            height="0"
+                            className="h-48 w-full object-cover"
+                            src={post.imageUrl}
+                            alt=""
+                        />
                     </div>
                     <div className="flex-1 bg-white p-6 flex flex-col justify-between">
                         <div className="flex-1">
@@ -42,8 +50,10 @@ export const Posts = ({ className = '' }): JSX.Element => (
                             <div className="flex-shrink-0">
                                 <a href={post.author.href}>
                                     <span className="sr-only">{post.author.name}</span>
-                                    <img
-                                        loading="lazy"
+                                    <Image
+                                        width={0}
+                                        height={0}
+                                        loading={'lazy'}
                                         className="h-10 w-10 rounded-full"
                                         src={post.author.imageUrl}
                                         alt="Portrait photo of Janek"

@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import LinesEllipsis from 'react-lines-ellipsis';
 import Link from 'next/link';
+import Image from 'next/image';
 
 export const Blogs = ({ className = '', posts }) => {
     const [mounted, setMounted] = useState(false);
@@ -18,8 +19,10 @@ export const Blogs = ({ className = '', posts }) => {
                             className="flex flex-col rounded-lg shadow-lg overflow-hidden cursor-pointer h-full">
                             <Link href={`/blog/${slug}`} as={`/blog/${slug}`} className="h-full flex flex-col">
                                 <div className="flex-shrink-0">
-                                    <img
-                                        loading="lazy"
+                                    <Image
+                                        width={0}
+                                        height={0}
+                                        loading={'lazy'}
                                         className="h-48 w-full object-cover"
                                         src={`/${frontmatter.socialImage}`}
                                         alt={frontmatter.title}
@@ -56,8 +59,10 @@ export const Blogs = ({ className = '', posts }) => {
                                     <div className="mt-6 flex items-center">
                                         <div className="flex-shrink-0">
                                             <span className="sr-only">Janek Ozga</span>
-                                            <img
-                                                loading="lazy"
+                                            <Image
+                                                width={0}
+                                                height={0}
+                                                loading={'lazy'}
                                                 className="h-10 w-10 rounded-full"
                                                 src="/images/janek-cropped.jpg"
                                                 alt="Portrait photo of Janek"

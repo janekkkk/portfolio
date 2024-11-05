@@ -3,7 +3,6 @@ import React from 'react';
 import { useRouter } from 'next/router';
 import { NextSeo } from 'next-seo';
 import { addCommentInSource, defaultLayoutMetaData, getDefaultPageURL } from '@/core/layout/layout.service';
-import { motion } from 'framer-motion';
 import { useCoreState } from '@/core/useCoreState.hook';
 import { useMount } from 'react-use';
 
