@@ -28,7 +28,11 @@ export const useSpotify = () => {
 
     useMount(async () => {
         try {
-            actions.setCurrentlyPlaying(await spotifyService.fetchNowPlaying());
+            const playing = await spotifyService.fetchNowPlaying();
+
+            if (playing) {
+                actions.setCurrentlyPlaying(playing);
+            }
         } catch (error) {
             // eslint-disable-next-line no-console
             console.error({ error });
