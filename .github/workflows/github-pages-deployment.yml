@@ -27,9 +27,9 @@ jobs:
             - name: Create .env file
               run: |
                 touch .env
-                echo "${{ secrets.NEXT_PUBLIC_SPOTIFY_CLIENT_ID }}" >> .env
-                echo "${{ secrets.NEXT_PUBLIC_SPOTIFY_CLIENT_SECRET }}" >> .env
-                echo "${{ secrets.NEXT_PUBLIC_SPOTIFY_REFRESH_TOKEN }}" >> .env
+                echo "NEXT_PUBLIC_SPOTIFY_CLIENT_ID=${{ secrets.NEXT_PUBLIC_SPOTIFY_CLIENT_ID }}" >> .env
+                echo "NEXT_PUBLIC_SPOTIFY_CLIENT_SECRET=${{ secrets.NEXT_PUBLIC_SPOTIFY_CLIENT_SECRET }}" >> .env
+                echo "NEXT_PUBLIC_SPOTIFY_REFRESH_TOKEN=${{ secrets.NEXT_PUBLIC_SPOTIFY_REFRESH_TOKEN }}" >> .env
 
             - name: Setup Node ${{ matrix.node-version }}
               uses: actions/setup-node@v4
