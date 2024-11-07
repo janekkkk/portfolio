@@ -1,12 +1,5 @@
 import axios from 'axios';
-import { CurrentlyPlayingSpotify } from '@/shared/services/spotify/spotify.model';
-
-interface RefreshTokenResponse {
-    access_token: string;
-    token_type: string;
-    expires_in: number;
-    scope: string;
-}
+import { CurrentlyPlayingSpotify, RefreshTokenResponse } from '@/shared/services/spotify/spotify.model';
 
 class SpotifyService {
     private readonly CLIENT_ID = process.env.NEXT_PUBLIC_SPOTIFY_CLIENT_ID;
@@ -14,7 +7,6 @@ class SpotifyService {
     private readonly REFRESH_TOKEN = process.env.NEXT_PUBLIC_SPOTIFY_REFRESH_TOKEN;
 
     private readonly NOW_PLAYING_ENDPOINT = 'https://api.spotify.com/v1/me/player/currently-playing';
-    private readonly AUTHORIZE_ENDPOINT = 'https://accounts.spotify.com/authorize';
     private readonly TOKEN_ENDPOINT = 'https://accounts.spotify.com/api/token';
 
     private async fetchAccessToken(): Promise<RefreshTokenResponse> {
@@ -53,10 +45,8 @@ class SpotifyService {
                 .then((response) => {
                     return response.data;
                 });
-        } catch (error) {
-            // eslint-disable-next-line no-console
-            console.error({ error });
-            // ToDo handle error
+        } catch {
+            // Ignore error.
         }
     }
 }
