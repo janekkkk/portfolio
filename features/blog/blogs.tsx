@@ -31,9 +31,9 @@ export const Blogs = ({ className = '', posts }) => {
                                 <div className="flex-1 bg-white p-6 flex flex-col justify-between">
                                     <div className="flex-1">
                                         <p className="text-sm font-medium text-blue-600">
-                                            {frontmatter.tags.map((tag) => (
-                                                <span key={tag}>{tag} </span>
-                                            ))}
+                                            {frontmatter.tags?.map((tag: string) => {
+                                                return <span key={tag}>{tag} </span>;
+                                            })}
                                         </p>
                                         <a className="flex flex-col mt-2">
                                             <div className="text-xl font-semibold text-gray-900">

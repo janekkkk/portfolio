@@ -1,14 +1,14 @@
 ---
 
-title: 'Add Fonts to Your Javascript app'
+title: Add Fonts to Your Javascript app
 
-metaTitle: 'Add Fonts to Your Javascript app'
+metaTitle: Add Fonts to Your Javascript app
 
-metaDesc: 'Adding fonts to webapps has never been easier. This one is going to short and sweet. This guide works for any JS app.'
+metaDesc: Adding fonts to webapps has never been easier. This one is going to short and sweet. This guide works for any JS app.
 
-socialImage: 'images/jeroen-den-otter-pLpO8kr6q9E-unsplash.jpg'
+socialImage: images/jeroen-den-otter-pLpO8kr6q9E-unsplash.jpg
 
-date: '2022-08-23'
+date: '23-08-2023'
 
 readingTime: 1 min
 

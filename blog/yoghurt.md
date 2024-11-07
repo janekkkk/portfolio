@@ -8,7 +8,7 @@ metaDesc: Creating your own homemade vegan yoghurt is easy, tasty and can save y
 
 socialImage: images/jaqueline-pelzer-neUW-U0NwCU-unsplash.jpg
 
-date: '2023-02-19'
+date: '19-02-2023'
 
 readingTime: 5 min
 

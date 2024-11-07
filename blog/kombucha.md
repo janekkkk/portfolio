@@ -1,14 +1,14 @@
 ---
 
-title: 'Kombucha recipe'
+title: Kombucha recipe
 
-metaTitle: 'Kombucha recipe'
+metaTitle: Kombucha recipe
 
 metaDesc: Kombucha is a fermented drink made from tea which has become very popular over the last few years. It has a funky taste in the best sense of the word. You could compare it with cider or wine without alcohol but with a tart edge. A lot of health benefits have been attributed to it but even if those are false, it's still a very tasty and fun to experiment with drink.
 
 socialImage: images/klara-avsenik-5cFqO92t7pM-unsplash.jpg
 
-date: '2022-08-22'
+date: '22-08-2022'
 
 readingTime: 5 min
 

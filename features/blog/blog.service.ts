@@ -20,16 +20,20 @@ class BlogService {
     public getBlogs(): { slug: string; frontmatter: { [key: string]: unknown } }[] {
         const files = fs.readdirSync('blog');
 
-        return files.map((fileName) => {
-            const slug = fileName.replace('.md', '');
-            const readFile = fs.readFileSync(`blog/${fileName}`, 'utf-8');
-            const { data: frontmatter } = matter(readFile);
+        return files
+            .map((fileName) => {
+                if (fileName.includes('.md')) {
+                    const slug = fileName.replace('.md', '');
+                    const readFile = fs.readFileSync(`blog/${fileName}`, 'utf-8');
+                    const { data: frontmatter } = matter(readFile);
 
-            return {
-                slug,
-                frontmatter,
-            };
-        });
+                    return {
+                        slug,
+                        frontmatter,
+                    };
+                }
+            })
+            .filter((blog) => blog !== undefined);
     }
 }
 
