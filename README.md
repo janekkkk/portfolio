@@ -32,7 +32,6 @@ npm run dev
 
 - **`npm run dev`**: Starts the local development server.
 - **`npm run build`**: Builds the application for production.
-- **`npm run export`**: Exports a static version of the site.
 - **`npm run start`**: Runs the production build.
 - **`npm run lint`**: Lints code with ESLint, automatically fixing issues.
 
