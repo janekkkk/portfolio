@@ -27,11 +27,9 @@ export const CurrentlyPlaying = (): ReactNode => {
                         78.756-7.245 109.83 11.202a7.823 7.823 0 012.74 10.733c-2.2 3.722-7.02 4.949-10.73 2.739z"
                     />
                 </svg>
-                <p className="text-gray-800 dark:text-gray-200 font-medium">{currentlyPlaying.item.name}</p>
-                <span className="mx-2 text-gray-500 dark:text-gray-300"> – </span>
-                <p className="text-gray-500 dark:text-gray-300 max-w-max truncate">
-                    {currentlyPlaying.item.artists[0].name}
-                </p>
+                <p className="text-gray-800 font-medium">{currentlyPlaying.item.name}</p>
+                <span className="mx-2 text-gray-500"> – </span>
+                <p className="text-gray-500 max-w-max truncate">{currentlyPlaying.item.artists[0].name}</p>
             </a>
         );
     } else return null;

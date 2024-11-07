@@ -33,7 +33,7 @@ export const Timeline = ({ className = '' }): ReactNode => {
                 </ul>
             </div>
 
-            <hr className="border border-gray-200 dark:border-gray-600 w-full my-8" />
+            <hr className="border border-gray-200 w-full my-8" />
 
             <div className="mt-5 block">
                 <h3 className="block">2021</h3>
@@ -47,7 +47,7 @@ export const Timeline = ({ className = '' }): ReactNode => {
                 </ul>
             </div>
 
-            <hr className="border border-gray-200 dark:border-gray-600 w-full my-8" />
+            <hr className="border border-gray-200 w-full my-8" />
 
             <div>
                 <h3 className="block">2020</h3>
@@ -66,7 +66,7 @@ export const Timeline = ({ className = '' }): ReactNode => {
             </div>
 
             <div className={classNames({ hidden: isHidden })}>
-                <hr className="border border-gray-200 dark:border-gray-600 w-full my-8" />
+                <hr className="border border-gray-200 w-full my-8" />
 
                 <div>
                     <h3 className="block">2019</h3>
@@ -80,7 +80,7 @@ export const Timeline = ({ className = '' }): ReactNode => {
                     </ul>
                 </div>
 
-                <hr className="border border-gray-200 dark:border-gray-600 w-full my-8" />
+                <hr className="border border-gray-200 w-full my-8" />
 
                 <div>
                     <h3 className="block">2018</h3>
