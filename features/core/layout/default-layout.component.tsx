@@ -6,7 +6,7 @@ import { addCommentInSource, defaultLayoutMetaData, getDefaultPageURL } from '@/
 import { useCoreState } from '@/core/useCoreState.hook';
 import { useMount } from 'react-use';
 
-export const DefaultLayout = ({ children }): JSX.Element => {
+export const DefaultLayout = ({ children }): ReactNode => {
     const pathName = useRouter().pathname;
     const pageURL = getDefaultPageURL(pathName);
     const { isAppInitialized, setIsAppInitialized } = useCoreState();

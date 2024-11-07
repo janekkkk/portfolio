@@ -7,7 +7,7 @@ import { Footer } from '@/core/footer.component';
 import { useCoreState } from '@/core/useCoreState.hook';
 import { useMount } from 'react-use';
 
-export const BlogLayout = ({ children }): JSX.Element => {
+export const BlogLayout = ({ children }): ReactNode => {
     const router = useRouter();
     const pathName = router.pathname;
     const pageURL = getDefaultPageURL(pathName);

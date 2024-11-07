@@ -21,10 +21,6 @@ class SpotifyService {
                 headers: {
                     'Content-Type': 'application/x-www-form-urlencoded',
                 },
-                auth: {
-                    username: this.CLIENT_ID,
-                    password: this.CLIENT_SECRET,
-                },
             })
             .then((response) => {
                 return response.data;

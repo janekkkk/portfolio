@@ -1,6 +1,6 @@
 import { useSpotify } from '@/shared/services/spotify/spotify-store.state';
 
-export const CurrentlyPlaying = (): JSX.Element => {
+export const CurrentlyPlaying = (): ReactNode => {
     const { currentlyPlaying } = useSpotify();
 
     if (currentlyPlaying) {

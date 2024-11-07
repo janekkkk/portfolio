@@ -18,7 +18,7 @@ export const getStaticProps = () => {
     };
 };
 
-export const Index = ({ posts }): JSX.Element => {
+export const Index = ({ posts }): ReactNode => {
     return (
         <PageTransition>
             <DefaultLayout>

@@ -1,7 +1,7 @@
 import React from 'react';
 import { TimelineItemModel } from '@/features/timeline/timeline-item.model';
 
-export const TimelineItem = ({ timeline, timelineItem, index }): JSX.Element => {
+export const TimelineItem = ({ timeline, timelineItem, index }): ReactNode => {
     const getPostfix = (item: TimelineItemModel): string => {
         if (item.postfix) {
             return ` ${item.postfix}`;

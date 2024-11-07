@@ -26,7 +26,7 @@ export const getStaticProps = ({
 };
 
 // eslint-disable-next-line react/display-name,import/no-anonymous-default-export
-export default ({ frontmatter, content }): JSX.Element => {
+export default ({ frontmatter, content }): ReactNode => {
     const [mounted, setMounted] = useState(false);
     useEffect(() => setMounted(true), []); // at init only
 

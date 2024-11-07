@@ -5,7 +5,7 @@ interface Props extends LinkProps {
     children: ReactNode;
 }
 
-export const NoScrollLink = ({ children, href, passHref }: Props): JSX.Element => (
+export const NoScrollLink = ({ children, href, passHref }: Props): ReactNode => (
     <Link href={href} passHref={passHref} scroll={false}>
         {children}
     </Link>
