@@ -16,7 +16,7 @@ export const AboutMe = ({ className = '' }) => {
             <h1 className="mt-8 font-bold text-3xl md:text-6xl tracking-normal mb-4 text-black">
                 Hey there — I&apos;m Janek.
             </h1>
-            <div className="max-w-xl mt-5 text-xl mb-16">
+            <div className="max-w-xl mt-5 text-xl mb-12">
                 <Typewriter
                     options={{
                         autoStart: true,

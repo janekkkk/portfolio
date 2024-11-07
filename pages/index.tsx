@@ -29,13 +29,13 @@ export const Index = ({ posts }): ReactNode => {
                     <Contact className="mt-8 md:mt-12 mb-0" />
                 </div>
                 <div>
-                    <Timeline className="mt-8 md:mt-12 mb-0" />
-                </div>
-                <div>
                     <Blogs className="mt-8 md:mt-12 mb-0" posts={Array.from(posts)} />
                 </div>
                 <div>
-                    <Posts className="mt-12 md:mt-14" />
+                    <Posts className="mt-8 md:mt-12 mb-0" />
+                </div>
+                <div>
+                    <Timeline className="mt-8 md:mt-12 mb-0" />
                 </div>
             </DefaultLayout>
         </PageTransition>
