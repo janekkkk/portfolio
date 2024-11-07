@@ -1,10 +1,10 @@
 ---
 
-title: Dark mode in one minute
+title: Implement Dark Mode in One Minute with Just CSS
 
-metaTitle: Dark mode in one minute
+metaTitle: Implement Dark Mode in One Minute with Just CSS
 
-metaDesc: Here's how I implemented dark mode on this website in one minute
+metaDesc: Learn how to quickly implement dark mode on your website with a simple CSS trick, no JavaScript necessary.
 
 socialImage: images/dark-mode.jpg
 
@@ -19,7 +19,7 @@ tags:
 
 ---
 
-Here's how I implemented dark mode on this website. Invert all colors, set a nice background, and invert again images and emojis so correct.
+Learn how to quickly implement dark mode on your website with a simple CSS trick, no JavaScript necessary.
 
 ## Prerequisites
 You can use this on any frontend website on [almost all browsers](https://caniuse.com/prefers-color-scheme) (97% of all users while writing this).
@@ -41,13 +41,11 @@ Let's see some code!
 
 This works almost perfectly out of the box! However, there are some issues with some elements on the page!
 
-Images and emojis are also inverted, but they should appear in their original colors. To achieve this, we can apply a double inversion to return them to their normal appearance. Makes sense?
+Images, code, and emojis are also inverted, but they should appear in their original colors. To achieve this, we can apply a double inversion to return them to their normal appearance. Makes sense?
 
 ```css
-@media (prefers-color-scheme: dark) {
-    img, .emoji {
-        filter: invert(100%);
-    }
+img, .emoji, pre {
+    filter: invert(100%);
 }
 ```
 
@@ -59,7 +57,7 @@ Here's how I implemented dark mode on this website:
 
 1. **Invert all colors** across the site.
 2. **Apply a visually pleasing dark background**.
-3. **Adjust images and emojis** by inverting them back to their original colors, ensuring they display correctly.
+3. **Adjust images, code previews, and emojis** by inverting them back to their original colors, ensuring they display correctly.
 
 This approach helped create a simple, seamless dark mode experience that maintains readability and preserves the intended look of images and emojis.
 
@@ -70,7 +68,7 @@ This approach helped create a simple, seamless dark mode experience that maintai
         background-color: black;
     }
 
-    img, .emoji {
+    img, .emoji, pre {
         filter: invert(100%);
     }
 }
