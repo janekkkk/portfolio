@@ -1,6 +1,6 @@
 import md from 'markdown-it';
 import { BlogLayout } from '@/core/layout/blog-layout';
-import React, { useEffect, useState } from 'react';
+import React, { ReactNode, useEffect, useState } from 'react';
 import { blogService } from '@/features/blog/blog.service';
 import { PageTransition } from '@/shared/components/animations/PageTransition';
 import Image from 'next/image';
@@ -26,7 +26,7 @@ export const getStaticProps = ({
 };
 
 // eslint-disable-next-line react/display-name,import/no-anonymous-default-export
-export default ({ frontmatter, content }): JSX.Element => {
+export default ({ frontmatter, content }): ReactNode => {
     const [mounted, setMounted] = useState(false);
     useEffect(() => setMounted(true), []); // at init only
 

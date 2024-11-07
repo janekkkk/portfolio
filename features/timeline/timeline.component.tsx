@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { ReactNode, useState } from 'react';
 import { TimelineItem } from '@/features/timeline/timeline-item/timeline-item.component';
 import {
     timeline2018,
@@ -9,7 +9,7 @@ import {
 } from '@/features/timeline/timline-lists.data';
 import classNames from 'classnames';
 
-export const Timeline = ({ className = '' }): JSX.Element => {
+export const Timeline = ({ className = '' }): ReactNode => {
     const [isHidden, setIsHidden] = useState<boolean>(true);
 
     const toggle = (): void => {

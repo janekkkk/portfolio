@@ -1,9 +1,9 @@
-import React from 'react';
+import React, { ReactNode } from 'react';
 import { posts } from '@/features/posts/posts.data';
 import LinesEllipsis from 'react-lines-ellipsis';
 import Image from 'next/image';
 
-export const Posts = ({ className = '' }): JSX.Element => (
+export const Posts = ({ className = '' }): ReactNode => (
     <div className={`${className} block`}>
         <h2 className="block text-2xl md:text-4xl">On the web</h2>
 
@@ -22,7 +22,7 @@ export const Posts = ({ className = '' }): JSX.Element => (
                     </div>
                     <div className="flex-1 bg-white p-6 flex flex-col justify-between">
                         <div className="flex-1">
-                            <p className="text-sm font-medium text-indigo-600">
+                            <p className="text-sm font-medium text-blue-600">
                                 <a href={post.category.href}>{post.category.name}</a>
                             </p>
                             <a href={post.href} className="block mt-2">

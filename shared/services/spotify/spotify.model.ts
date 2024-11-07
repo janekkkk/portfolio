@@ -7,15 +7,18 @@ export interface CurrentlyPlayingSpotify {
     actions: Actions;
     is_playing: boolean;
 }
+
 export interface Context {
     external_urls: ExternalUrls;
     href: string;
     type: string;
     uri: string;
 }
+
 export interface ExternalUrls {
     spotify: string;
 }
+
 export interface Item {
     album: Album;
     artists?: ArtistsEntity[] | null;
@@ -35,6 +38,7 @@ export interface Item {
     type: string;
     uri: string;
 }
+
 export interface Album {
     album_type: string;
     artists?: ArtistsEntity[] | null;
@@ -50,6 +54,7 @@ export interface Album {
     type: string;
     uri: string;
 }
+
 export interface ArtistsEntity {
     external_urls: ExternalUrls;
     href: string;
@@ -58,17 +63,28 @@ export interface ArtistsEntity {
     type: string;
     uri: string;
 }
+
 export interface ImagesEntity {
     height: number;
     url: string;
     width: number;
 }
+
 export interface ExternalIds {
     isrc: string;
 }
+
 export interface Actions {
     disallows: Disallows;
 }
+
 export interface Disallows {
     resuming: boolean;
+}
+
+export interface RefreshTokenResponse {
+    access_token: string;
+    token_type: string;
+    expires_in: number;
+    scope: string;
 }

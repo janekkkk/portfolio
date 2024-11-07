@@ -1,10 +1,10 @@
-import React from 'react';
+import React, { ReactNode } from 'react';
 
 interface ContactProps {
     className: string;
 }
 
-export const Contact = ({ className }: ContactProps): JSX.Element => (
+export const Contact = ({ className }: ContactProps): ReactNode => (
     <div className={`${className} block`}>
         <h2 className="block text-2xl md:text-4xl">First things first</h2>
         <p>

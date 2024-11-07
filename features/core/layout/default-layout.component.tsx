@@ -1,12 +1,12 @@
 import { Footer } from '@/core/footer.component';
-import React from 'react';
+import React, { ReactNode } from 'react';
 import { useRouter } from 'next/router';
 import { NextSeo } from 'next-seo';
 import { addCommentInSource, defaultLayoutMetaData, getDefaultPageURL } from '@/core/layout/layout.service';
 import { useCoreState } from '@/core/useCoreState.hook';
 import { useMount } from 'react-use';
 
-export const DefaultLayout = ({ children }): JSX.Element => {
+export const DefaultLayout = ({ children }): ReactNode => {
     const pathName = useRouter().pathname;
     const pageURL = getDefaultPageURL(pathName);
     const { isAppInitialized, setIsAppInitialized } = useCoreState();
