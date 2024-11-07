@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { ReactNode } from 'react';
 import { Posts } from '@/features/posts/posts.component';
 import { AboutMe } from '@/features/about-me/about.me.component';
 import { DefaultLayout } from '@/core/layout/default-layout.component';

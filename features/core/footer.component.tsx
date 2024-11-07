@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { ReactNode } from 'react';
 import { CurrentlyPlaying } from '@/features/currently-playing/currently-playing.component';
 
 // ToDo replace SVG icons with react-icons.

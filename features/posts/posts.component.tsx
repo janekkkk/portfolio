@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { ReactNode } from 'react';
 import { posts } from '@/features/posts/posts.data';
 import LinesEllipsis from 'react-lines-ellipsis';
 import Image from 'next/image';

@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { ReactNode, useState } from 'react';
 import { TimelineItem } from '@/features/timeline/timeline-item/timeline-item.component';
 import {
     timeline2018,

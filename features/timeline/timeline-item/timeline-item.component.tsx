@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { ReactNode } from 'react';
 import { TimelineItemModel } from '@/features/timeline/timeline-item.model';
 
 export const TimelineItem = ({ timeline, timelineItem, index }): ReactNode => {
