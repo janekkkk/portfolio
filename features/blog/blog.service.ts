@@ -7,13 +7,13 @@ class BlogService {
 
         return files.map((fileName) => ({
             params: {
-                slug: fileName.replace('.md', ''),
+                slug: fileName.replace('.mdx', ''),
             },
         }));
     }
 
     public getContent(slug: string): matter.GrayMatterFile<string> {
-        const fileName = fs.readFileSync(`blog/${slug}.md`, 'utf-8');
+        const fileName = fs.readFileSync(`blog/${slug}.mdx`, 'utf-8');
         return matter(fileName);
     }
 
@@ -23,7 +23,7 @@ class BlogService {
         return files
             .map((fileName) => {
                 if (fileName.includes('.md')) {
-                    const slug = fileName.replace('.md', '');
+                    const slug = fileName.replace('.mdx', '');
                     const readFile = fs.readFileSync(`blog/${fileName}`, 'utf-8');
                     const { data: frontmatter } = matter(readFile);
 

@@ -28,7 +28,7 @@ export const BlogLayout = ({ children }): ReactNode => {
                 canonical={pageURL}
                 openGraph={{
                     type: 'website',
-                    locale: 'en_US', //  Default is en_US
+                    locale: 'en_US',
                     url: pageURL,
                     title: defaultLayoutMetaData.title,
                     description: defaultLayoutMetaData.description,
@@ -40,7 +40,7 @@ export const BlogLayout = ({ children }): ReactNode => {
                             alt: 'Janekozga.nl - personal site / portfolio',
                         },
                     ],
-                    site_name: defaultLayoutMetaData.siteName,
+                    siteName: defaultLayoutMetaData.siteName,
                 }}
                 twitter={{
                     handle: defaultLayoutMetaData.twitterHandle,
@@ -65,15 +65,15 @@ export const BlogLayout = ({ children }): ReactNode => {
                 ]}
             />
 
-            <div className="flex flex-col justify-center items-start max-w-4xl mx-auto min-h-screen py-2">
-                <header className="px-8 mb-6">
+            <div className="flex flex-col justify-top items-center max-w-4xl mx-auto min-h-screen py-2 blog">
+                <div className="px-8 mb-6 flex ">
                     <button type="button" onClick={() => router.back()} className="flex items-center text-xl">
                         <AiOutlineRollback />
                         <span className="ml-2">Go back</span>
                     </button>
-                </header>
+                </div>
 
-                <div className="px-8">
+                <div className="px-4 sm:px-8 md:px-4">
                     <main className="flex flex-col w-full flex-1">
                         <article className="prose">{children}</article>
                     </main>

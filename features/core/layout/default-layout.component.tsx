@@ -63,7 +63,7 @@ export const DefaultLayout = ({ children }): ReactNode => {
                 ]}
             />
 
-            <div className="flex flex-col justify-center items-start max-w-4xl mx-auto min-h-screen py-2">
+            <div className="flex flex-col justify-center items-center max-w-4xl mx-auto min-h-screen py-2">
                 <div className="px-8">
                     <main className="flex flex-col w-full flex-1">{children}</main>
 
