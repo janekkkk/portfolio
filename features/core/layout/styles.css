@@ -37,6 +37,13 @@ a {
     }
 }
 
+.blog {
+    img {
+        @apply rounded-l;
+    }
+}
+
+
 @media (prefers-color-scheme: dark) {
     body {
         filter: invert(100%);
