@@ -4,16 +4,44 @@ import {
     GlobeEuropeAfricaIcon,
     BuildingOfficeIcon,
     UserIcon,
+    HomeIcon,
+    SunIcon,
 } from '@heroicons/react/24/solid';
 import { TimelineItemModel } from '@/features/timeline/timeline-item.model';
+
+export const timeline2023: TimelineItemModel[] = [
+    {
+        content: 'Bought our',
+        target: 'first house',
+        date: 'May',
+        icon: HomeIcon,
+        iconBackground: 'bg-blue-600',
+    },
+    {
+        content: 'Adopted two',
+        target: 'cats',
+        date: 'December',
+        icon: SunIcon,
+        iconBackground: 'bg-blue-600',
+        emoji: '🐈🐈‍⬛',
+    },
+];
 
 export const timeline2022: TimelineItemModel[] = [
     {
         content: 'Started a new job with',
         target: 'Kate Innovations',
-        postfix: 'as a frontend lead',
+        postfix: 'as a frontend developer',
         href: 'https://kateinnovations.com/',
         date: 'February',
+        icon: BriefcaseIcon,
+        iconBackground: 'bg-kate',
+    },
+    {
+        content: 'Became frontend lead at',
+        target: 'Kate Innovations',
+        href: 'https://kateinnovations.com/',
+        date: 'October',
         icon: BriefcaseIcon,
         iconBackground: 'bg-kate',
     },
@@ -26,7 +54,7 @@ export const timeline2021: TimelineItemModel[] = [
         href: 'https://github.com/janekkkk/portfolio',
         date: 'August',
         icon: CodeBracketIcon,
-        iconBackground: 'bg-blue-500',
+        iconBackground: 'bg-blue-600',
     },
     {
         content: 'Helping improving the DAMP web app for',
@@ -45,7 +73,7 @@ export const timeline2020: TimelineItemModel[] = [
         target: 'React',
         date: 'December',
         icon: CodeBracketIcon,
-        iconBackground: 'bg-blue-500',
+        iconBackground: 'bg-blue-600',
     },
     {
         content: 'Started',
