@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import GraphemeSplitter from 'grapheme-splitter';
 import Typewriter from 'typewriter-effect';
+import { ColorSchemeToggle } from '@/features/dark-mode-toggle/ColorSchemeToggle';
 
 export const AboutMe = ({ className = '' }) => {
     const [mounted, setMounted] = useState(false);

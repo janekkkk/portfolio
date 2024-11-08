@@ -9,7 +9,7 @@ html {
     scroll-behavior: smooth;
 }
 
-h1,h2,h3,h4,h5,h6 {
+h1, h2, h3, h4, h5, h6 {
     @apply font-bold md:text-5xl tracking-normal mb-4 text-black;
 }
 
@@ -43,11 +43,22 @@ a {
     }
 }
 
+.dark {
+    body {
+        filter: invert(100%);
+        @apply bg-gray-900;
+    }
+
+    img, .emoji, pre {
+        filter: invert(100%);
+    }
+}
+
 
 @media (prefers-color-scheme: dark) {
     body {
         filter: invert(100%);
-        background-color: rgb(29, 32, 31);
+        @apply bg-gray-900;
     }
 
     img, .emoji, pre {
