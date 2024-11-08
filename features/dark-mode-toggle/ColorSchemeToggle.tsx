@@ -44,7 +44,8 @@ export const ColorSchemeToggle = () => {
             <button
                 onClick={toggleDarkMode}
                 type="button"
-                className="dark:hidden block font-medium text-gray-800 rounded-full hover:bg-gray-200 focus:outline-none focus:bg-gray-200 dark:text-neutral-200 dark:hover:bg-neutral-800 dark:focus:bg-neutral-800"
+                className="dark:hidden block font-medium text-gray-800 rounded-full hover:bg-gray-200 focus:outline-none
+                 focus:bg-gray-200 dark:text-neutral-200 dark:hover:bg-neutral-800 dark:focus:bg-neutral-800"
                 data-hs-theme-click-value="dark">
                 <span className="group inline-flex shrink-0 justify-center items-center size-9">
                     <svg
@@ -65,7 +66,8 @@ export const ColorSchemeToggle = () => {
             <button
                 type="button"
                 onClick={toggleDarkMode}
-                className="dark:block hidden font-medium text-gray-900 rounded-full hover:bg-gray-400 focus:outline-none focus:bg-gray-500 dark:text-black dark:hover:bg-neutral-400 dark:focus:bg-neutral-800"
+                className="dark:block hidden font-medium text-gray-900 rounded-full hover:bg-gray-400 focus:outline-none
+                 focus:bg-gray-500 dark:text-black dark:hover:bg-neutral-400 dark:focus:bg-neutral-800"
                 data-hs-theme-click-value="light">
                 <span className="group inline-flex shrink-0 justify-center items-center size-9">
                     <svg
