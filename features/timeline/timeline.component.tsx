@@ -6,6 +6,7 @@ import {
     timeline2020,
     timeline2021,
     timeline2022,
+    timeline2023,
 } from '@/features/timeline/timline-lists.data';
 import classNames from 'classnames';
 
@@ -20,6 +21,20 @@ export const Timeline = ({ className = '' }): ReactNode => {
     return (
         <div className={className} id="timeline">
             <h2 className="block text-2xl md:text-4xl">Timeline</h2>
+
+            <div className="mt-5 block">
+                <h3 className="block">2023</h3>
+
+                <ul className="block">
+                    {timeline2023.map((timelineItem, index) => (
+                        <li key={index + timelineItem.date} className="pb-8 last:pb-0">
+                            <TimelineItem timeline={timeline2021} timelineItem={timelineItem} index={index} />
+                        </li>
+                    ))}
+                </ul>
+            </div>
+
+            <hr className="border border-gray-200 w-full my-8" />
 
             <div className="mt-5 block">
                 <h3 className="block">2022</h3>
