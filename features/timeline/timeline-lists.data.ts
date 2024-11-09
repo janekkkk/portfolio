@@ -3,7 +3,7 @@ import {
     CodeBracketIcon,
     GlobeEuropeAfricaIcon,
     BuildingOfficeIcon,
-    UserIcon,
+    UsersIcon,
     HomeIcon,
     SunIcon,
 } from '@heroicons/react/24/solid';
@@ -69,18 +69,11 @@ export const timeline2021: TimelineItemModel[] = [
 
 export const timeline2020: TimelineItemModel[] = [
     {
-        content: 'Started learning',
-        target: 'React',
-        date: 'December',
-        icon: CodeBracketIcon,
-        iconBackground: 'bg-blue-600',
-    },
-    {
         content: 'Started',
         target: 'living together',
         date: 'September',
-        icon: UserIcon,
-        iconBackground: 'bg-gray-400',
+        icon: UsersIcon,
+        iconBackground: 'bg-blue-600',
         emoji: '🔑️',
     },
     {
