@@ -1,33 +1,14 @@
-import { useMount, useToggle } from 'react-use';
 import { useEffect } from 'react';
+import { useCore } from '@/core/core.state';
 
-const getPreferredColorScheme = (): boolean => {
-    if (window?.matchMedia) {
-        return window.matchMedia('(prefers-color-scheme: dark)').matches; // dark
-    }
-    return false; // light
-};
-
-export const ColorSchemeToggle = () => {
-    const [isInDarkMode, toggleDarkMode] = useToggle(false);
-
-    const watchColorSchemeChanges = () => {
-        if (window?.matchMedia) {
-            const colorSchemeQuery = window.matchMedia('(prefers-color-scheme: dark)');
-            colorSchemeQuery.addEventListener('change', () => toggleDarkMode(getPreferredColorScheme()));
-        }
-    };
-
-    useMount(() => {
-        toggleDarkMode(getPreferredColorScheme());
-        watchColorSchemeChanges();
-    });
+export const DarkModeToggle = () => {
+    const { isDarkModeEnabled, actions } = useCore();
 
     /**
      * This will make sure I can also use the Tailwind dark mode all over the app. https://tailwindcss.com/docs/dark-mode#toggling-dark-mode-manually
      */
     const addDarkClassToHTMLElement = () => {
-        if (isInDarkMode) {
+        if (isDarkModeEnabled) {
             document.documentElement.classList.add('dark');
             document.documentElement.classList.remove('light');
         } else {
@@ -39,12 +20,12 @@ export const ColorSchemeToggle = () => {
     useEffect(() => {
         addDarkClassToHTMLElement();
         // eslint-disable-next-line react-hooks/exhaustive-deps
-    }, [isInDarkMode]);
+    }, [isDarkModeEnabled]);
 
     return (
         <div>
             <button
-                onClick={toggleDarkMode}
+                onClick={() => actions.toggleDarkMode()}
                 type="button"
                 className="dark:hidden block font-medium text-gray-800 rounded-full hover:bg-gray-200 focus:outline-none
                  focus:bg-gray-200 dark:text-neutral-200 dark:hover:bg-neutral-800 dark:focus:bg-neutral-800">
@@ -66,7 +47,7 @@ export const ColorSchemeToggle = () => {
             </button>
             <button
                 type="button"
-                onClick={toggleDarkMode}
+                onClick={() => actions.toggleDarkMode()}
                 className="dark:block hidden font-medium text-gray-900 rounded-full hover:bg-gray-400 focus:outline-none
                  focus:bg-gray-500 dark:text-black dark:hover:bg-neutral-400 dark:focus:bg-neutral-800">
                 <span className="group inline-flex shrink-0 justify-center items-center size-9">
