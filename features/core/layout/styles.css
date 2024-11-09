@@ -1,8 +1,7 @@
 @import '~tailwindcss/tailwind.css';
 
 ::selection {
-    background-color: #47a3f3;
-    color: #fefefe;
+    @apply bg-blue-600 text-white;
 }
 
 html {
@@ -43,6 +42,17 @@ a {
     }
 }
 
+@media (prefers-color-scheme: dark) {
+    body {
+        filter: invert(100%);
+        @apply bg-gray-900;
+    }
+
+    img, .emoji, pre {
+        filter: invert(100%);
+    }
+}
+
 .dark {
     body {
         filter: invert(100%);
@@ -54,14 +64,14 @@ a {
     }
 }
 
-
-@media (prefers-color-scheme: dark) {
+.light {
     body {
-        filter: invert(100%);
-        @apply bg-gray-900;
+        filter: unset;
+        background-color: unset;
     }
 
     img, .emoji, pre {
-        filter: invert(100%);
+        filter: unset;
+
     }
 }

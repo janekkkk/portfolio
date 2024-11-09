@@ -7,7 +7,7 @@ import {
     timeline2021,
     timeline2022,
     timeline2023,
-} from '@/features/timeline/timline-lists.data';
+} from '@/features/timeline/timeline-lists.data';
 import classNames from 'classnames';
 
 export const Timeline = ({ className = '' }): ReactNode => {
