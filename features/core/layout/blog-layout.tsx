@@ -1,25 +1,15 @@
 import React, { ReactNode } from 'react';
 import { useRouter } from 'next/router';
 import { NextSeo } from 'next-seo';
-import { addCommentInSource, defaultLayoutMetaData, getDefaultPageURL } from '@/core/layout/layout.service';
+import { defaultLayoutMetaData, getDefaultPageURL } from '@/core/layout/layout.service';
 import { AiOutlineRollback } from 'react-icons/ai';
 import { Footer } from '@/core/footer.component';
-import { useCoreState } from '@/core/useCoreState.hook';
-import { useMount } from 'react-use';
-import { ColorSchemeToggle } from '@/features/dark-mode-toggle/ColorSchemeToggle';
+import { DarkModeToggle } from '@/features/dark-mode-toggle/DarkModeToggle';
 
 export const BlogLayout = ({ children }): ReactNode => {
     const router = useRouter();
     const pathName = router.pathname;
     const pageURL = getDefaultPageURL(pathName);
-    const { isAppInitialized, setIsAppInitialized } = useCoreState();
-
-    useMount(() => {
-        if (!isAppInitialized) {
-            addCommentInSource();
-            setIsAppInitialized();
-        }
-    });
 
     return (
         <>
@@ -67,7 +57,7 @@ export const BlogLayout = ({ children }): ReactNode => {
             />
 
             <div className="absolute top-4 right-4">
-                <ColorSchemeToggle />
+                <DarkModeToggle />
             </div>
 
             <div className="flex flex-col justify-top items-center max-w-4xl mx-auto min-h-screen py-2 blog">
