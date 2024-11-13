@@ -1,6 +1,7 @@
 export const defaultLayoutMetaData = {
     title: 'Janek Ozga',
-    description: "I'm a frontend developer, tree planter, and a fun guy to hang around with. I like to build things.",
+    description:
+        "Welcome to my portfolio! I'm a frontend developer who loves crafting web experiences, exploring tech, and sharing my journey. Check out my projects, blog posts on coding, and experiments with fermenting, plant care, cooking and other interests.",
     siteURL: 'https://janekozga.nl',
     ogImageURL: '/og.png',
     twitterHandle: '@janekofoz',
