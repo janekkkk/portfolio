@@ -14,10 +14,12 @@ export const Blogs = ({ className = '', posts }) => {
 
                 <div className="mt-6 max-w-lg mx-auto grid gap-5 md:grid-cols-2 lg:grid-cols-3 lg:max-w-none">
                     {posts.map(({ slug, frontmatter }) => (
-                        <div
+                        <Link
                             key={slug}
-                            className="flex flex-col rounded-lg shadow-lg overflow-hidden cursor-pointer h-full">
-                            <Link href={`/blog/${slug}`} as={`/blog/${slug}`} className="h-full flex flex-col">
+                            href={`/blog/${slug}`}
+                            as={`/blog/${slug}`}
+                            className="h-full flex flex-col hover:border-none">
+                            <div className="flex flex-col rounded-lg shadow-lg overflow-hidden cursor-pointer h-full">
                                 <div className="flex-shrink-0">
                                     <Image
                                         width={0}
@@ -35,7 +37,7 @@ export const Blogs = ({ className = '', posts }) => {
                                                 return <span key={tag}>{tag} </span>;
                                             })}
                                         </p>
-                                        <a className="flex flex-col mt-2">
+                                        <a className="flex flex-col mt-2 hover:border-none">
                                             <div className="text-xl font-semibold text-gray-900">
                                                 <LinesEllipsis
                                                     text={frontmatter.title}
@@ -78,8 +80,8 @@ export const Blogs = ({ className = '', posts }) => {
                                         </div>
                                     </div>
                                 </div>
-                            </Link>
-                        </div>
+                            </div>
+                        </Link>
                     ))}
                 </div>
             </div>
