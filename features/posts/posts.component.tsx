@@ -25,7 +25,7 @@ export const Posts = ({ className = '' }): ReactNode => (
                         />
                     </div>
 
-                    <div className="bg-white p-6 flex flex-col justify-between flex-grow">
+                    <div className="bg-white p-6 flex flex-col justify-between flex-grow    ">
                         <div className="">
                             <p className="text-sm font-medium text-blue-600">{post.category.name}</p>
                             <div className="mt-2">

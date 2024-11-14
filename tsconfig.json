@@ -15,7 +15,8 @@
       ],
       "@/core/*": [
         "features/core/*"
-      ]
+      ],
+      "content-collections": ["./.content-collections/generated"]
     },
     "target": "es5",
     "lib": [
