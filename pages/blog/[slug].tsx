@@ -1,10 +1,12 @@
-import md from 'markdown-it';
 import { BlogLayout } from '@/core/layout/blog-layout';
-import React, { ReactNode, useState } from 'react';
+import React, { useState } from 'react';
 import { blogService } from '@/features/blog/blog.service';
 import { PageTransition } from '@/shared/components/animations/PageTransition';
 import Image from 'next/image';
 import { useMount } from 'react-use';
+import { MDXContent } from '@content-collections/mdx/react';
+import { allBlogs } from 'content-collections';
+import { useRouter } from 'next/router';
 
 export const getStaticPaths = (): { paths: { params: { slug: string } }[]; fallback: boolean } => {
     return {
@@ -13,24 +15,20 @@ export const getStaticPaths = (): { paths: { params: { slug: string } }[]; fallb
     };
 };
 
-export const getStaticProps = ({
-    params: { slug },
-}): { props: { frontmatter: { [p: string]: unknown }; content: string } } => {
-    const { data: frontmatter, content } = blogService.getContent(slug);
-
+export const getStaticProps = ({ params: { slug } }): { props: { slug: string } } => {
     return {
         props: {
-            frontmatter,
-            content,
+            slug: slug,
         },
     };
 };
 
-// eslint-disable-next-line react/display-name,import/no-anonymous-default-export
-export default ({ frontmatter, content }): ReactNode => {
+export default function BlogPostPage() {
     const [mounted, setMounted] = useState(false);
+    const router = useRouter();
+    const blog = allBlogs.find((post) => post._meta.path === router.query.slug);
 
-    useMount(() => {
+    useMount(async () => {
         setMounted(true);
     });
 
@@ -39,20 +37,20 @@ export default ({ frontmatter, content }): ReactNode => {
             <PageTransition>
                 <BlogLayout>
                     <div className="mx-auto">
-                        <h1>{frontmatter.title}</h1>
+                        <h1>{blog.title}</h1>
                         <Image
                             width={0}
                             height={0}
                             loading={'lazy'}
                             className="h-48 w-full object-cover"
-                            src={`/${frontmatter.socialImage}`}
-                            alt={frontmatter.title}
+                            src={`/${blog.socialImage}`}
+                            alt={blog.title}
                         />
-                        <div dangerouslySetInnerHTML={{ __html: md().render(content) }} />
+                        <MDXContent code={blog.mdx} />
                     </div>
                 </BlogLayout>
             </PageTransition>
         );
     }
     return null;
-};
+}
