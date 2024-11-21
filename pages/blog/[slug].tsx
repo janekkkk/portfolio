@@ -25,11 +25,17 @@ export const getStaticProps = ({ params: { slug } }): { props: { slug: string } 
 
 export default function BlogPostPage() {
     const [mounted, setMounted] = useState(false);
+    const [blog, setBlog] = useState(null);
     const router = useRouter();
-    const blog = allBlogs.find((post) => post._meta.path === router.query.slug);
 
-    useMount(async () => {
+    const getBlog = () => {
+        const foundBlog = allBlogs.find((post) => post._meta.path === router.query.slug);
+        setBlog(foundBlog);
+    };
+
+    useMount(() => {
         setMounted(true);
+        getBlog();
     });
 
     if (mounted) {

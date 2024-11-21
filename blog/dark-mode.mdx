@@ -19,6 +19,9 @@ tags:
 
 ---
 
+import { DarkModeToggle } from '../features/dark-mode-toggle/DarkModeToggle'
+import { FaArrowRight } from "react-icons/fa";
+
 Learn how to quickly implement dark mode on your website with a simple CSS trick, no JavaScript necessary.
 
 ## Prerequisites
@@ -57,7 +60,7 @@ img, .emoji, pre {
 
 That's it! The whole page is now ready for dark mode.
 
-![Screenshot of the fix](/blog/dark-mode-fixed.png)
+<div className="flex items-center"><span className="mr-2">Press me to test me!</span><FaArrowRight className="mr-2" /><DarkModeToggle /></div>
 
 ## Conclusion
 
