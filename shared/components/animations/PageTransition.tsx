@@ -1,14 +1,11 @@
 import { useRouter } from 'next/router';
-import { motion, useReducedMotion } from 'framer-motion';
 import { useCore } from '@/core/core.state';
+import { motion, useReducedMotion } from 'motion/react';
 
-/**
- * https://dev.to/jameswallis/animating-next-js-page-transitions-with-framer-motion-1g9j
- */
 export const PageTransition = ({ children }) => {
     const { asPath, pathname } = useRouter();
-    const shouldReduceMotion = useReducedMotion();
     const { isAppInitialized } = useCore();
+    const shouldReduceMotion = useReducedMotion();
 
     const getX = (): number => {
         if (!isAppInitialized) {
