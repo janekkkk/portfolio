@@ -43,7 +43,7 @@ jobs:
 
             - name: Install and Build 🔧 # Builds app to the /out directory.
               run: |
-                pnpm install
+                pnpm install --no-frozen-lockfile
                   npm run build
 
             - name: Copy .nojekyll
