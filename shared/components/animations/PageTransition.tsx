@@ -1,10 +1,11 @@
 import { useRouter } from 'next/router';
 import { useCore } from '@/core/core.state';
-import { motion } from 'motion/react';
+import { motion, useReducedMotion } from 'motion/react';
 
 export const PageTransition = ({ children }) => {
     const { asPath, pathname } = useRouter();
     const { isAppInitialized } = useCore();
+    const shouldReduceMotion = useReducedMotion();
 
     const getX = (): number => {
         if (!isAppInitialized) {
@@ -27,7 +28,7 @@ export const PageTransition = ({ children }) => {
     return (
         <motion.div
             key={asPath}
-            variants={variants}
+            variants={shouldReduceMotion ? null : variants}
             initial="hidden"
             animate="enter"
             exit="exit"
