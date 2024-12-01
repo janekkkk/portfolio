@@ -2,7 +2,6 @@ import React from 'react';
 import '@/features/core/layout/styles.css';
 import '@fontsource/inter/';
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
-import { AnimatePresence } from 'framer-motion';
 import { useMount } from 'react-use';
 import { useCore } from '../features/core/core.state';
 import { addCommentInSource } from '../features/core/layout/layout.service';
@@ -20,15 +19,13 @@ const MyApp = ({ Component, pageProps }) => {
         addCommentInSource();
 
         actions.toggleDarkMode(getPreferredColorScheme());
-        watchColorSchemeChanges();
+        watchColorSchemeChanges(actions.toggleDarkMode);
     });
 
     return (
-        <AnimatePresence onExitComplete={() => window.scrollTo(0, 0)}>
-            <QueryClientProvider client={queryClient}>
-                <Component {...pageProps} />
-            </QueryClientProvider>
-        </AnimatePresence>
+        <QueryClientProvider client={queryClient}>
+            <Component {...pageProps} />
+        </QueryClientProvider>
     );
 };
 
