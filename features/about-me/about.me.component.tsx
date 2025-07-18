@@ -6,9 +6,9 @@ export const AboutMe = ({ className = '' }) => {
     const [mounted, setMounted] = useState(false);
     useEffect(() => setMounted(true), []); // at init only
 
-    const stringSplitter = (text: string): string[] => {
+    const stringSplitter = (text: string): string => {
         const splitter = new GraphemeSplitter();
-        return splitter.splitGraphemes(text);
+        return splitter.splitGraphemes(text).join('');
     };
 
     return mounted ? (
